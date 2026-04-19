@@ -5,3 +5,10 @@ repos:
       - id: ruff-format
       - id: ruff
         args: [--fix]
+  - repo: local
+    hooks:
+      - id: block-private-paths
+        name: block private/site paths from being committed
+        entry: scripts/block_private_paths.sh
+        language: script
+        pass_filenames: true

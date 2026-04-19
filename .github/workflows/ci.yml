@@ -13,6 +13,8 @@ jobs:
         with:
           python-version: "3.12"
       - uses: astral-sh/setup-uv@v4
+      - name: Block private/site paths
+        run: bash scripts/block_private_paths.sh
       - name: Sync dependencies
         run: uv sync
       - name: Format check
