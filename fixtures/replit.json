@@ -1,0 +1,9 @@
+{
+  "_samples": {
+    "currentUser": {"id": "user_mock_verifiabl", "username": "verifiabl", "firstName": "Mock", "lastName": "User", "image": null, "isLoggedIn": true},
+    "repl": {"id": "repl_mock_001", "slug": "my-app", "title": "My App", "language": "python3", "url": "https://replit.com/@verifiabl/my-app"},
+    "repls": [{"id": "repl_mock_001", "slug": "my-app", "title": "My App"}, {"id": "repl_mock_002", "slug": "other-app", "title": "Other App"}],
+    "deployment": {"id": "deploy_mock_001", "status": "live", "url": "https://my-app.verifiabl.repl.co", "createdAt": 1710400000},
+    "deployments": [{"id": "deploy_mock_001", "status": "live", "url": "https://my-app.verifiabl.repl.co"}, {"id": "deploy_mock_002", "status": "building", "url": null}]
+  }
+}

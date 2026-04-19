@@ -1,0 +1,17 @@
+{
+  "/personnel/v1/person-details": [
+    {"EmployeeIdentifier": "emp_mock_001", "FirstName": "Jane", "LastName": "Doe", "EmailAddress": "jane@verifiabl.dev"},
+    {"EmployeeIdentifier": "emp_mock_002", "FirstName": "John", "LastName": "Smith", "EmailAddress": "john@verifiabl.dev"}
+  ],
+  "/personnel/v1/employee-demographic-details": [
+    {"EmployeeIdentifier": "emp_mock_001", "DateOfBirth": "1990-01-15", "GenderCode": "F"},
+    {"EmployeeIdentifier": "emp_mock_002", "DateOfBirth": "1985-06-20", "GenderCode": "M"}
+  ],
+  "/configuration/v1/company-details": [
+    {"CompanyCode": "CC001", "CompanyName": "Verifiabl Inc", "CountryCode": "USA"}
+  ],
+  "/configuration/v1/jobs": [
+    {"Code": "ENG", "Description": "Engineer", "JobFamily": "Technology"},
+    {"Code": "MGR", "Description": "Manager", "JobFamily": "Management"}
+  ]
+}

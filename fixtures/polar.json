@@ -1,0 +1,37 @@
+{
+  "/v1/organizations/": {
+    "items": [
+      {"id": "org_mock_001", "name": "Acme Corp", "slug": "acme", "created_at": "2025-01-15T12:00:00Z", "modified_at": null},
+      {"id": "org_mock_002", "name": "Globex", "slug": "globex", "created_at": "2025-01-16T12:00:00Z", "modified_at": null}
+    ],
+    "pagination": {"total_count": 2, "max_page": 1}
+  },
+  "/v1/products/": {
+    "items": [
+      {"id": "prod_mock_001", "name": "Pro Plan", "description": "Monthly subscription", "is_recurring": true, "created_at": "2025-01-15T12:00:00Z", "modified_at": null},
+      {"id": "prod_mock_002", "name": "Lifetime License", "description": "One-time purchase", "is_recurring": false, "created_at": "2025-01-16T12:00:00Z", "modified_at": null}
+    ],
+    "pagination": {"total_count": 2, "max_page": 1}
+  },
+  "/v1/orders/": {
+    "items": [
+      {"id": "ord_mock_001", "status": "paid", "paid": true, "subtotal_amount": 10000, "created_at": "2025-01-15T12:00:00Z", "modified_at": null},
+      {"id": "ord_mock_002", "status": "paid", "paid": true, "subtotal_amount": 20000, "created_at": "2025-01-16T12:00:00Z", "modified_at": null}
+    ],
+    "pagination": {"total_count": 2, "max_page": 1}
+  },
+  "/v1/subscriptions/": {
+    "items": [
+      {"id": "sub_mock_001", "amount": 10000, "currency": "usd", "recurring_interval": "month", "status": "active", "created_at": "2025-01-15T12:00:00Z", "modified_at": null},
+      {"id": "sub_mock_002", "amount": 20000, "currency": "usd", "recurring_interval": "year", "status": "active", "created_at": "2025-01-16T12:00:00Z", "modified_at": null}
+    ],
+    "pagination": {"total_count": 2, "max_page": 1}
+  },
+  "/v1/customers/": {
+    "items": [
+      {"id": "cus_mock_001", "email": "alice@verifiabl.dev", "external_id": null, "created_at": "2025-01-15T12:00:00Z", "modified_at": null},
+      {"id": "cus_mock_002", "email": "bob@verifiabl.dev", "external_id": null, "created_at": "2025-01-16T12:00:00Z", "modified_at": null}
+    ],
+    "pagination": {"total_count": 2, "max_page": 1}
+  }
+}

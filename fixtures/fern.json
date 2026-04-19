@@ -1,0 +1,42 @@
+{
+  "conversation": [
+    {
+      "conversation_id": "conv_mock_001",
+      "created_at": "2026-03-14T12:00:00.000Z",
+      "turns": [
+        {"role": "user", "text": "How do I get started?", "created_at": "2026-03-14T12:00:00.000Z", "feedback": null},
+        {"role": "assistant", "text": "See the quickstart guide.", "created_at": "2026-03-14T12:00:01.000Z", "feedback": {"is_helpful": true, "feedback_message": null}}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q_mock_001",
+      "conversation_id": "conv_mock_001",
+      "domain": "docs",
+      "text": "How do I authenticate?",
+      "role": "user",
+      "source": "widget",
+      "created_at": "2026-03-14T12:00:00.000Z",
+      "time_to_first_token": 0.5,
+      "subqueries": null
+    }
+  ],
+  "websites": [
+    {
+      "website_id": "web_mock_001",
+      "domain": "docs",
+      "base_url": "https://docs.verifiabl.dev",
+      "page_url": "https://docs.verifiabl.dev/intro",
+      "chunk": "Get started with the API.",
+      "document": "intro",
+      "title": "Introduction",
+      "version": null,
+      "product": null,
+      "keywords": null,
+      "authed": null,
+      "created_at": "2026-03-14T12:00:00.000Z",
+      "updated_at": "2026-03-14T12:00:00.000Z"
+    }
+  ]
+}

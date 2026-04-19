@@ -1,0 +1,34 @@
+---
+description: Rules for mock integration files in mocks/
+globs: mocks/*.py
+alwaysApply: false
+---
+
+# Mock File Rules
+
+## Structure (non-negotiable)
+
+```python
+from mocks.base import BaseMock, route
+
+class ExampleMock(BaseMock):
+    prefix = "/example"
+    spec_url = "https://..."
+    sandbox_base = "https://api.example.com"
+
+    @route("GET", "/v1/resource")
+    async def get_resource(self, request): ...
+
+    @route("POST", "/v1/resource")
+    async def create_resource(self, request): ...
+```
+
+## Constraints
+
+- Subclass `BaseMock`. Use `@route()` decorator for every handler. No other pattern.
+- Set all three class attributes: `prefix`, `spec_url`, `sandbox_base`.
+- LOC budget: ~50 lines. If a mock exceeds 80 lines, it is doing too much.
+- Do NOT import from `auth.py`, `store.py`, or `main.py`. Mock handlers receive resolved context from the router.
+- Do NOT implement tier logic, write-drop logic, or auth checks inside a mock file.
+- Every mock file MUST have a corresponding `fixtures/{name}.json` with realistic seed data.
+- `{name}` in the filename must match the `prefix` (without the leading slash).

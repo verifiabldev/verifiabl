@@ -1,0 +1,4 @@
+{
+  "/user": {"login": "mockuser", "id": 1, "type": "User"},
+  "/repos/mock/repo/issues": [{"number": 1, "title": "Mock issue", "state": "open"}]
+}

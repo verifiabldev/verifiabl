@@ -1,0 +1,23 @@
+{
+  "/v1/account": {"name": "KB4-Demo", "type": "paid", "domains": ["kb4-demo.com"], "subscription_level": "Diamond", "number_of_seats": 25, "current_risk_score": 45.742},
+  "/v1/users": [
+    {"id": 667542, "employee_number": "19425", "first_name": "William", "last_name": "Marcoux", "email": "wmarcoux@kb4-demo.com", "current_risk_score": 45.742, "status": "active"},
+    {"id": 667543, "employee_number": "19426", "first_name": "Sarah", "last_name": "Thomas", "email": "s_thomas@kb4-demo.com", "current_risk_score": 38.2, "status": "active"}
+  ],
+  "/v1/groups": [
+    {"id": 3142, "name": "Customer Service", "group_type": "console_group", "member_count": 42, "status": "active"},
+    {"id": 3264, "name": "All Users", "group_type": "console_group", "member_count": 25, "status": "active"}
+  ],
+  "/v1/training/campaigns": [
+    {"campaign_id": 4261, "name": "Annual Training", "status": "Completed"},
+    {"campaign_id": 4262, "name": "New Employee Policies", "status": "Active"}
+  ],
+  "/v1/training/enrollments": [
+    {"enrollment_id": 1425526, "module_name": "Acceptable Use Policy", "campaign_name": "New Employee Policies", "status": "Passed"},
+    {"enrollment_id": 1425527, "module_name": "Security Awareness Training", "campaign_name": "Annual Training", "status": "Passed"}
+  ],
+  "/v1/training/policies": [
+    {"policy_id": 2420, "name": "Physical Security Policy", "minimum_time": 3, "status": 1},
+    {"policy_id": 2421, "name": "Security Awareness Policy", "minimum_time": 3, "status": 1}
+  ]
+}

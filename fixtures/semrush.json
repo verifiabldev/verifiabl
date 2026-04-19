@@ -1,0 +1,57 @@
+{
+  "/domain_ranks": {
+    "data": [
+      {"Db": "us", "Dn": "semrush.com", "Rk": 1250, "Or": 420000, "Ot": 1850000, "Oc": 9200000, "Ad": 1200, "At": 45000, "Ac": 180000},
+      {"Db": "uk", "Dn": "semrush.com", "Rk": 980, "Or": 380000, "Ot": 1620000, "Oc": 8100000, "Ad": 900, "At": 32000, "Ac": 140000}
+    ]
+  },
+  "/domain_rank": {
+    "data": [{"Dn": "semrush.com", "Rk": 1250, "Or": 420000, "Ot": 1850000, "Oc": 9200000, "Ad": 1200, "At": 45000, "Ac": 180000}]
+  },
+  "/domain_rank_history": {
+    "data": [
+      {"Rk": 1248, "Or": 418000, "Ot": 1842000, "Oc": 9150000, "Ad": 1190, "At": 44800, "Ac": 179200, "Dt": "20250315"},
+      {"Rk": 1252, "Or": 421000, "Ot": 1855000, "Oc": 9220000, "Ad": 1210, "At": 45200, "Ac": 181000, "Dt": "20250215"}
+    ]
+  },
+  "/rank": {
+    "data": [
+      {"Dn": "wikipedia.org", "Rk": 1, "Or": 83084012, "Ot": 1953530514, "Oc": 1766901500, "Ad": 98, "At": 6375, "Ac": 9285},
+      {"Dn": "youtube.com", "Rk": 2, "Or": 71381392, "Ot": 874589621, "Oc": 496405761, "Ad": 68366, "At": 63473756, "Ac": 29516519},
+      {"Dn": "semrush.com", "Rk": 1250, "Or": 420000, "Ot": 1850000, "Oc": 9200000, "Ad": 1200, "At": 45000, "Ac": 180000}
+    ]
+  },
+  "/rank_difference": {
+    "data": [
+      {"Dn": "semrush.com", "Rk": 1250, "Or": 420000, "Ot": 1850000, "Oc": 9200000, "Om": 2100, "Tm": 85000, "Um": 4200},
+      {"Dn": "competitor.com", "Rk": 2100, "Or": 280000, "Ot": 1200000, "Oc": 5800000, "Om": -1200, "Tm": -32000, "Um": -1800}
+    ]
+  },
+  "/domain_organic": {
+    "data": [
+      {"keyword": "semrush api", "position": 1, "volume": 8100, "traffic_cost": 42000},
+      {"keyword": "seo tools", "position": 3, "volume": 135000, "traffic_cost": 680000}
+    ]
+  },
+  "/backlinks_overview": {
+    "backlinks": 125000,
+    "ref_domains": 4200,
+    "target": "semrush.com"
+  },
+  "/keyword_overview": {
+    "keyword": "semrush",
+    "volume": 135000,
+    "keyword_difficulty": 72,
+    "cpc": 4.20,
+    "data": [
+      {"position": 1, "url": "https://www.semrush.com", "title": "Semrush - SEO Software"},
+      {"position": 2, "url": "https://competitor.com", "title": "Competitor SEO Tool", "domain_rating": 68}
+    ]
+  },
+  "/organic_positions": {
+    "data": [
+      {"url": "https://www.semrush.com/blog", "keyword": "seo guide", "position": 2, "volume": 22000},
+      {"url": "https://www.semrush.com/kb", "keyword": "semrush api", "position": 1, "volume": 8100}
+    ]
+  }
+}

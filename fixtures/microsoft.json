@@ -1,0 +1,50 @@
+{
+  "/v1.0/me": {
+    "id": "user_mock_verifiabl",
+    "displayName": "Mock User",
+    "mail": "mock@verifiabl.dev",
+    "userPrincipalName": "mock@verifiabl.dev",
+    "givenName": "Mock",
+    "surname": "User"
+  },
+  "/v1.0/users": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+      {"id": "user_mock_001", "displayName": "Alice Verifiabl", "mail": "alice@verifiabl.dev", "userPrincipalName": "alice@verifiabl.dev", "givenName": "Alice", "surname": "Verifiabl"},
+      {"id": "user_mock_002", "displayName": "Bob Dev", "mail": "bob@verifiabl.dev", "userPrincipalName": "bob@verifiabl.dev", "givenName": "Bob", "surname": "Dev"}
+    ]
+  },
+  "/v1.0/me/mailFolders": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user_mock_verifiabl')/mailFolders",
+    "value": [
+      {"id": "inbox_mock", "displayName": "Inbox", "totalItemCount": 42},
+      {"id": "sent_mock", "displayName": "Sent Items", "totalItemCount": 10}
+    ]
+  },
+  "/v1.0/me/messages": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user_mock_verifiabl')/messages",
+    "value": [
+      {"id": "msg_mock_001", "subject": "Welcome", "bodyPreview": "Hello from the mock.", "receivedDateTime": "2024-03-14T12:00:00Z"},
+      {"id": "msg_mock_002", "subject": "Re: Welcome", "bodyPreview": "Thanks!", "receivedDateTime": "2024-03-14T13:00:00Z"}
+    ]
+  },
+  "/v1.0/me/calendar/events": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user_mock_verifiabl')/events",
+    "value": [
+      {"id": "event_mock_001", "subject": "Team standup", "start": {"dateTime": "2024-03-14T09:00:00", "timeZone": "UTC"}, "end": {"dateTime": "2024-03-14T09:30:00", "timeZone": "UTC"}}
+    ]
+  },
+  "/v1.0/me/drive/root/children": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user_mock_verifiabl')/drive/root/children",
+    "value": [
+      {"id": "item_mock_001", "name": "Document.pdf", "size": 1024, "file": {}},
+      {"id": "item_mock_002", "name": "Folder", "folder": {"childCount": 3}}
+    ]
+  },
+  "/v1.0/organization": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",
+    "value": [
+      {"id": "org_mock_verifiabl", "displayName": "Verifiabl Dev", "verifiedDomains": [{"name": "verifiabl.dev", "isDefault": true}]}
+    ]
+  }
+}

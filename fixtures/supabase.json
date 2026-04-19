@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "id": "proj_mock_verifiabl",
+      "ref": "abcdefghijklmnopqrst",
+      "organization_id": "org_mock_001",
+      "organization_slug": "mock_org",
+      "name": "Mock Project",
+      "region": "us-east-1",
+      "created_at": "2023-03-29T16:32:59Z",
+      "status": "ACTIVE_HEALTHY",
+      "database": {"host": "db.abc.supabase.co", "version": "15", "postgres_engine": "15", "release_channel": "stable"}
+    },
+    {
+      "id": "proj_mock_002",
+      "ref": "pqrstuvwxyzabcdefghij",
+      "organization_id": "org_mock_001",
+      "organization_slug": "mock_org",
+      "name": "Second Project",
+      "region": "us-west-1",
+      "created_at": "2024-01-15T10:00:00Z",
+      "status": "ACTIVE_HEALTHY",
+      "database": {"host": "db.pqr.supabase.co", "version": "15", "postgres_engine": "15", "release_channel": "stable"}
+    }
+  ],
+  "organizations": [
+    {"id": "org_mock_001", "slug": "mock_org", "name": "Mock Organization"},
+    {"id": "org_mock_002", "slug": "other_org", "name": "Other Org"}
+  ]
+}

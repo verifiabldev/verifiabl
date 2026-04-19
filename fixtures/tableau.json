@@ -1,0 +1,32 @@
+{
+  "/api/3.28/sites/site_mock_001/workbooks": {
+    "pagination": {"pageNumber": 1, "pageSize": 100, "totalAvailable": 2},
+    "workbooks": [
+      {"id": "wb_mock_001", "name": "Sales Dashboard", "projectId": "proj_mock_001"},
+      {"id": "wb_mock_002", "name": "Finance Views", "projectId": "proj_mock_001"}
+    ]
+  },
+  "/api/3.28/sites/site_mock_001/workbooks/wb_mock_001": {
+    "workbook": {
+      "id": "wb_mock_001",
+      "name": "Sales Dashboard",
+      "projectId": "proj_mock_001",
+      "views": [{"id": "view_mock_001", "name": "Overview"}]
+    }
+  },
+  "/api/3.28/sites/site_mock_001/views": {
+    "pagination": {"pageNumber": 1, "pageSize": 100, "totalAvailable": 2},
+    "views": [
+      {"id": "view_mock_001", "name": "Overview", "workbookId": "wb_mock_001"},
+      {"id": "view_mock_002", "name": "Detail", "workbookId": "wb_mock_001"}
+    ]
+  },
+  "/api/3.28/sites/site_mock_001/projects": {
+    "pagination": {"pageNumber": 1, "pageSize": 100, "totalAvailable": 1},
+    "projects": [{"id": "proj_mock_001", "name": "Default"}]
+  },
+  "/api/3.28/sites/site_mock_001/datasources": {
+    "pagination": {"pageNumber": 1, "pageSize": 100, "totalAvailable": 1},
+    "datasources": [{"id": "ds_mock_001", "name": "Sample", "projectId": "proj_mock_001"}]
+  }
+}

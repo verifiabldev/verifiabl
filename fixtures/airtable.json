@@ -1,0 +1,23 @@
+{
+  "/v0/meta/bases": {
+    "bases": [
+      {"id": "app_mock_verifiabl", "name": "Verifiabl Mock", "permissionLevel": "create"}
+    ]
+  },
+  "/v0/meta/bases/app_mock_verifiabl/tables": {
+    "tables": [
+      {"id": "tbl_mock_tasks", "name": "Tasks", "description": "Mock tasks", "fields": [{"id": "fld_name", "name": "Name", "type": "singleLineText"}]}
+    ]
+  },
+  "/v0/app_mock_verifiabl/Tasks": {
+    "records": [
+      {"id": "rec_mock_001", "createdTime": "2024-03-14T12:00:00.000Z", "fields": {"Name": "First task"}},
+      {"id": "rec_mock_002", "createdTime": "2024-03-14T12:00:00.000Z", "fields": {"Name": "Second task"}}
+    ]
+  },
+  "/v0/app_mock_verifiabl/Tasks/rec_mock_001": {
+    "id": "rec_mock_001",
+    "createdTime": "2024-03-14T12:00:00.000Z",
+    "fields": {"Name": "First task"}
+  }
+}

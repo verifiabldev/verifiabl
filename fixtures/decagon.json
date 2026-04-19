@@ -1,0 +1,18 @@
+{
+  "agents": [
+    {"id": "agt_mock_001", "name": "Support Agent", "status": "active", "created_at": 1710400000},
+    {"id": "agt_mock_002", "name": "Sales Concierge", "status": "active", "created_at": 1710400100}
+  ],
+  "conversations": [
+    {"id": "conv_mock_001", "agent_id": "agt_mock_001", "channel": "chat", "status": "open", "created_at": 1710400000, "user_id": "usr_mock_001"},
+    {"id": "conv_mock_002", "agent_id": "agt_mock_001", "channel": "email", "status": "closed", "created_at": 1710401000, "user_id": "usr_mock_001"}
+  ],
+  "messages": [
+    {"id": "msg_mock_001", "role": "user", "content": "I need help with my order", "created_at": 1710400000},
+    {"id": "msg_mock_002", "role": "assistant", "content": "I'd be happy to help.", "created_at": 1710400001}
+  ],
+  "integrations": [
+    {"id": "int_mock_001", "type": "slack", "status": "connected", "created_at": 1710400000},
+    {"id": "int_mock_002", "type": "zendesk", "status": "connected", "created_at": 1710400100}
+  ]
+}

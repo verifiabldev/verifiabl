@@ -1,0 +1,32 @@
+{
+  "apps": [
+    {"id": "682kqp6pdno9d543", "name": "my-app-1", "machine_count": 1, "volume_count": 0, "network": "default"},
+    {"id": "z4k69dxd8r31p5mx", "name": "my-app-2", "machine_count": 0, "volume_count": 1, "network": "default"}
+  ],
+  "machines": [
+    {
+      "id": "a5c5de9ce64ca12",
+      "name": "aged-wind-2649",
+      "state": "started",
+      "region": "ord",
+      "instance_id": "1RREBN3T5K95DK9IVP4XHTTPEY2",
+      "private_ip": "fdaa:0:18:a7b:196:e274:9ce1:2",
+      "created_at": "2023-10-31T02:30:10Z",
+      "updated_at": "2023-10-31T02:35:26Z",
+      "image_ref": {"registry": "registry-1.docker.io", "repository": "library/ubuntu", "tag": "latest"}
+    }
+  ],
+  "volumes": [
+    {
+      "id": "vol_9vw681egy1jj5xm4",
+      "name": "disk",
+      "state": "created",
+      "size_gb": 3,
+      "region": "yul",
+      "zone": "09cd",
+      "encrypted": true,
+      "attached_machine_id": "908057ef21e487",
+      "created_at": "2023-09-01T19:47:14.774Z"
+    }
+  ]
+}

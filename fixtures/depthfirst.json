@@ -1,0 +1,47 @@
+{
+  "/v1/projects": {
+    "projects": [
+      {"id": "proj_mock_001", "name": "acme-api", "provider": "github", "repo_url": "https://github.com/acme/acme-api", "created_at": 1710400000},
+      {"id": "proj_mock_002", "name": "acme-web", "provider": "gitlab", "repo_url": "https://gitlab.com/acme/acme-web", "created_at": 1710400100}
+    ]
+  },
+  "/v1/projects/proj_mock_001": {
+    "id": "proj_mock_001",
+    "name": "acme-api",
+    "provider": "github",
+    "repo_url": "https://github.com/acme/acme-api",
+    "created_at": 1710400000,
+    "last_scan_at": 1710486400
+  },
+  "/v1/scans": {
+    "scans": [
+      {"id": "scan_mock_001", "project_id": "proj_mock_001", "status": "completed", "started_at": 1710400000, "completed_at": 1710403600},
+      {"id": "scan_mock_002", "project_id": "proj_mock_001", "status": "running", "started_at": 1710486400, "completed_at": null}
+    ]
+  },
+  "/v1/scans/scan_mock_001": {
+    "id": "scan_mock_001",
+    "project_id": "proj_mock_001",
+    "status": "completed",
+    "started_at": 1710400000,
+    "completed_at": 1710403600,
+    "findings_count": 3
+  },
+  "/v1/findings": {
+    "findings": [
+      {"id": "find_mock_001", "scan_id": "scan_mock_001", "severity": "high", "title": "SQL injection in login", "state": "open", "created_at": 1710403600},
+      {"id": "find_mock_002", "scan_id": "scan_mock_001", "severity": "medium", "title": "Hardcoded secret in config", "state": "open", "created_at": 1710403601}
+    ]
+  },
+  "/v1/findings/find_mock_001": {
+    "id": "find_mock_001",
+    "scan_id": "scan_mock_001",
+    "severity": "high",
+    "title": "SQL injection in login",
+    "state": "open",
+    "created_at": 1710403600,
+    "file_path": "src/auth/login.py",
+    "line": 42,
+    "remediation": "Use parameterized queries."
+  }
+}

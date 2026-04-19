@@ -1,0 +1,75 @@
+{
+  "/agents": {
+    "items": [
+      {"id": 1, "name": "Default Assistant", "description": "General purpose agent", "tools": [], "starter_messages": null, "llm_relevance_filter": false, "llm_filter_extraction": false, "document_sets": [], "llm_model_version_override": null, "llm_model_provider_override": null, "uploaded_image_id": null, "icon_name": "default", "is_public": true, "is_visible": true, "display_priority": 0, "is_default_persona": true, "builtin_persona": true, "labels": [], "owner": null},
+      {"id": 2, "name": "Sales Agent", "description": "CRM and pipeline agent", "tools": [{"id": 1, "name": "search", "description": "Search", "definition": null, "display_name": "Search", "in_code_tool_id": null, "custom_headers": null, "passthrough_auth": false}], "starter_messages": [{"name": "Intro", "message": "How can I help?"}], "llm_relevance_filter": true, "llm_filter_extraction": false, "document_sets": [{"id": 1, "name": "Sales", "description": null, "cc_pair_summaries": [], "is_up_to_date": true, "is_public": true, "users": [], "groups": [], "federated_connector_summaries": []}], "llm_model_version_override": null, "llm_model_provider_override": null, "uploaded_image_id": null, "icon_name": "briefcase", "is_public": true, "is_visible": true, "display_priority": 1, "is_default_persona": false, "builtin_persona": false, "labels": [{"id": 1, "name": "sales"}], "owner": {"id": "user_mock_001", "email": "admin@verifiabl.dev"}}
+    ],
+    "total_items": 2
+  },
+  "/persona/1": {
+    "id": 1,
+    "name": "Default Assistant",
+    "description": "General purpose agent",
+    "is_public": true,
+    "is_visible": true,
+    "uploaded_image_id": null,
+    "icon_name": "default",
+    "user_file_ids": [],
+    "display_priority": 0,
+    "is_default_persona": true,
+    "builtin_persona": true,
+    "starter_messages": null,
+    "llm_relevance_filter": false,
+    "llm_filter_extraction": false,
+    "tools": [],
+    "labels": [],
+    "owner": null,
+    "users": [],
+    "groups": [],
+    "document_sets": [],
+    "llm_model_provider_override": null,
+    "llm_model_version_override": null,
+    "num_chunks": null,
+    "system_prompt": null,
+    "replace_base_system_prompt": false,
+    "task_prompt": null,
+    "datetime_aware": true,
+    "search_start_date": null
+  },
+  "/chat/get-user-chat-sessions": {
+    "sessions": [
+      {"id": "session_mock_001", "name": "Product questions", "persona_id": 1, "time_created": "2026-03-14T12:00:00Z", "time_updated": "2026-03-14T12:05:00Z", "shared_status": "private", "current_alternate_model": null, "current_temperature_override": null},
+      {"id": "session_mock_002", "name": "Support thread", "persona_id": 2, "time_created": "2026-03-13T10:00:00Z", "time_updated": "2026-03-13T10:30:00Z", "shared_status": "private", "current_alternate_model": null, "current_temperature_override": null}
+    ]
+  },
+  "/chat/get-chat-session/session_mock_001": {
+    "chat_session_id": "session_mock_001",
+    "description": null,
+    "persona_id": 1,
+    "persona_name": "Default Assistant",
+    "personal_icon_name": "default",
+    "messages": [
+      {"chat_session_id": "session_mock_001", "message_id": 1, "parent_message": null, "latest_child_message": null, "message": "Hello", "reasoning_tokens": null, "message_type": "user", "context_docs": null, "citations": null, "time_sent": "2026-03-14T12:00:00Z", "files": [], "error": null},
+      {"chat_session_id": "session_mock_001", "message_id": 2, "parent_message": 1, "latest_child_message": null, "message": "Hi, how can I help?", "reasoning_tokens": null, "message_type": "assistant", "context_docs": null, "citations": null, "time_sent": "2026-03-14T12:00:05Z", "files": [], "error": null}
+    ],
+    "time_created": "2026-03-14T12:00:00Z",
+    "shared_status": "private",
+    "current_alternate_model": null,
+    "current_temperature_override": null,
+    "deleted": false,
+    "packets": []
+  },
+  "/tool": [
+    {"id": 1, "name": "search", "description": "Search knowledge base", "display_name": "Search", "enabled": true},
+    {"id": 2, "name": "web_search", "description": "Web search", "display_name": "Web Search", "enabled": true}
+  ],
+  "/tool/1": {
+    "id": 1,
+    "name": "search",
+    "description": "Search knowledge base",
+    "display_name": "Search",
+    "definition": {},
+    "enabled": true,
+    "in_code_tool_id": "search"
+  }
+}

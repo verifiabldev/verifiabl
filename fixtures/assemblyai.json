@@ -1,0 +1,42 @@
+{
+  "/v2/transcript": {
+    "page_details": {
+      "limit": 10,
+      "result_count": 2,
+      "current_url": "https://api.assemblyai.com/v2/transcript?limit=10",
+      "prev_url": null,
+      "next_url": null
+    },
+    "transcripts": [
+      {
+        "id": "tra_mock_verifiabl_001",
+        "resource_url": "https://api.assemblyai.com/v2/transcript/tra_mock_verifiabl_001",
+        "status": "completed",
+        "created": "2024-03-11T21:29:59.936851",
+        "completed": "2024-03-11T21:30:07.314223",
+        "audio_url": "https://verifiabl.dev/audio.mp3",
+        "error": null
+      },
+      {
+        "id": "tra_mock_verifiabl_002",
+        "resource_url": "https://api.assemblyai.com/v2/transcript/tra_mock_verifiabl_002",
+        "status": "completed",
+        "created": "2024-03-11T21:12:57.372215",
+        "completed": "2024-03-11T21:13:03.267020",
+        "audio_url": "https://verifiabl.dev/other.mp3",
+        "error": null
+      }
+    ]
+  },
+  "/v2/transcript/tra_mock_verifiabl_001": {
+    "id": "tra_mock_verifiabl_001",
+    "status": "completed",
+    "audio_url": "https://verifiabl.dev/audio.mp3",
+    "created": "2024-03-11T21:29:59.936851",
+    "completed": "2024-03-11T21:30:07.314223",
+    "error": null,
+    "text": "Hello world. This is a mock transcript.",
+    "confidence": 0.95,
+    "audio_duration": 12
+  }
+}

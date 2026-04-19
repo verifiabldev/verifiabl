@@ -1,0 +1,14 @@
+{
+  "workspaces": [
+    {"id": "ws_mock_001", "name": "Acme Product", "created_at": 1710400000},
+    {"id": "ws_mock_002", "name": "Beta Team", "created_at": 1710400100}
+  ],
+  "documents": [
+    {"id": "doc_mock_001", "title": "API v2 PRD", "workspace_id": "ws_mock_001", "updated_at": 1710400000},
+    {"id": "doc_mock_002", "title": "Onboarding Spec", "workspace_id": "ws_mock_001", "updated_at": 1710401000}
+  ],
+  "templates": [
+    {"id": "tpl_mock_001", "name": "PRD", "description": "Product requirements document"},
+    {"id": "tpl_mock_002", "name": "Technical Spec", "description": "Technical specification"}
+  ]
+}

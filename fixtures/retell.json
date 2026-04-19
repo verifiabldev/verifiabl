@@ -1,0 +1,52 @@
+{
+  "agent": [
+    {
+      "agent_id": "agent_mock_001",
+      "version": 0,
+      "is_published": false,
+      "response_engine": {"type": "retell-llm", "llm_id": "llm_mock_001", "version": 0},
+      "voice_id": "retell-Cimo",
+      "agent_name": "Support Agent",
+      "last_modification_timestamp": 1710400000000
+    },
+    {
+      "agent_id": "agent_mock_002",
+      "version": 0,
+      "is_published": false,
+      "response_engine": {"type": "retell-llm", "llm_id": "llm_mock_001", "version": 0},
+      "voice_id": "retell-Cimo",
+      "agent_name": "Sales Bot",
+      "last_modification_timestamp": 1710400000000
+    }
+  ],
+  "call": [
+    {
+      "call_id": "call_mock_001",
+      "agent_id": "agent_mock_001",
+      "agent_version": 0,
+      "call_status": "ended",
+      "agent_name": "Support Agent",
+      "call_type": "web_call",
+      "access_token": "mock_access_token_001",
+      "metadata": {},
+      "start_timestamp": 1710400000000,
+      "end_timestamp": 1710400060000,
+      "duration_ms": 60000
+    },
+    {
+      "call_id": "call_mock_002",
+      "agent_id": "agent_mock_001",
+      "agent_version": 0,
+      "call_status": "ended",
+      "agent_name": "Support Agent",
+      "call_type": "phone_call",
+      "from_number": "+12137771234",
+      "to_number": "+12137771235",
+      "direction": "outbound",
+      "metadata": {},
+      "start_timestamp": 1710400000000,
+      "end_timestamp": 1710400060000,
+      "duration_ms": 60000
+    }
+  ]
+}

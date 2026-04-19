@@ -1,0 +1,35 @@
+{
+  "/api/v2/campaigns": {
+    "items": [
+      {"id": "019cc043-e30c-7245-9123-8470ac01f534", "name": "Outreach Q1", "status": 1, "campaign_schedule": {"start_date": "2025-01-15", "end_date": null, "schedules": []}, "timestamp_created": "2025-01-10T12:00:00Z", "timestamp_updated": "2025-01-12T14:00:00Z"},
+      {"id": "019cc043-e30c-7245-9123-8470ac01f535", "name": "Follow-up", "status": 2, "campaign_schedule": {"start_date": "2025-01-15", "end_date": null, "schedules": []}, "timestamp_created": "2025-01-10T12:00:00Z", "timestamp_updated": "2025-01-12T14:00:00Z"}
+    ],
+    "next_starting_after": null
+  },
+  "/api/v2/leads/list": {
+    "items": [
+      {"id": "019cc043-d74d-7eae-885a-00ddc8a51e91", "contact": "lead_mock@verifiabl.dev", "first_name": "Jane", "last_name": "Lead", "status": "FILTER_VAL_CONTACTED", "campaign_id": "019cc043-e30c-7245-9123-8470ac01f534"},
+      {"id": "019cc043-d74d-7eae-885a-00ddc8a51e92", "contact": "lead_mock_2@verifiabl.dev", "first_name": "John", "last_name": "Lead", "status": "FILTER_VAL_CONTACTED", "campaign_id": "019cc043-e30c-7245-9123-8470ac01f534"}
+    ],
+    "next_starting_after": null
+  },
+  "/api/v2/lead-lists": {
+    "items": [
+      {"id": "019cc043-d74d-7eae-885a-00dcbf3b1304", "name": "Mock List", "timestamp_created": "2025-01-08T10:00:00Z"},
+      {"id": "019cc043-d74d-7eae-885a-00dcbf3b1305", "name": "Second List", "timestamp_created": "2025-01-09T11:00:00Z"}
+    ],
+    "next_starting_after": null
+  },
+  "/api/v2/accounts": {
+    "items": [
+      {"id": "019cc043-acc1-7000-9000-000000000001", "email": "sender_mock@verifiabl.dev", "status": "healthy"},
+      {"id": "019cc043-acc1-7000-9000-000000000002", "email": "sender_mock_2@verifiabl.dev", "status": "healthy"}
+    ],
+    "next_starting_after": null
+  },
+  "/api/v2/workspace": {
+    "id": "019cc043-wksp-7000-9000-000000000001",
+    "name": "Mock Workspace",
+    "timestamp_created": "2025-01-01T00:00:00Z"
+  }
+}

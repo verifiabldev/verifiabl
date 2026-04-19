@@ -1,0 +1,8 @@
+{
+  "_samples": {
+    "me": {"id": "user_mock_verifiabl", "name": "Mock User", "email": "mock@verifiabl.dev"},
+    "project": {"id": "project_mock_001", "name": "my-app", "services": [{"id": "svc_mock_001", "name": "api"}], "environments": [{"id": "env_mock_001", "name": "production"}]},
+    "projectCreate": {"id": "project_mock_new", "name": "my-new-project"},
+    "deployments": [{"id": "deploy_mock_001", "status": "SUCCESS", "createdAt": "1710400000"}, {"id": "deploy_mock_002", "status": "BUILDING", "createdAt": "1710400100"}]
+  }
+}

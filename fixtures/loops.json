@@ -1,0 +1,21 @@
+{
+  "/api/v1/api-key": {"success": true, "teamName": "verifiabl"},
+  "/api/v1/contacts/find": [
+    {"id": "contact_mock_001", "email": "alice@verifiabl.dev", "firstName": "Alice", "lastName": "Verifiabl", "source": "api", "subscribed": true, "userGroup": "", "userId": null, "mailingLists": {}, "optInStatus": "accepted"}
+  ],
+  "/api/v1/contacts/properties": [
+    {"key": "firstName", "label": "First name", "type": "string"},
+    {"key": "planName", "label": "Plan name", "type": "string"}
+  ],
+  "/api/v1/lists": [
+    {"id": "list_mock_001", "name": "Main list", "description": "Primary audience", "isPublic": true},
+    {"id": "list_mock_002", "name": "Newsletter", "description": "Weekly digest", "isPublic": false}
+  ],
+  "/api/v1/transactional": {
+    "pagination": {"totalResults": 2, "returnedResults": 2, "perPage": 20, "totalPages": 1, "nextCursor": null, "nextPage": null},
+    "data": [
+      {"id": "txn_mock_001", "name": "Welcome email", "lastUpdated": "2025-02-02T02:56:28.845Z", "dataVariables": ["name"]},
+      {"id": "txn_mock_002", "name": "Password reset", "lastUpdated": "2025-02-01T12:00:00.000Z", "dataVariables": ["resetLink"]}
+    ]
+  }
+}

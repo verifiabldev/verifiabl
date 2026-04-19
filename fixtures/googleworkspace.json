@@ -1,0 +1,18 @@
+{
+  "/admin/directory/v1/users": {
+    "kind": "admin#directory#users",
+    "users": [
+      {"id": "user_mock_001", "primaryEmail": "alice@verifiabl.dev", "kind": "admin#directory#user", "name": {"givenName": "Alice", "familyName": "User", "fullName": "Alice User"}},
+      {"id": "user_mock_002", "primaryEmail": "bob@verifiabl.dev", "kind": "admin#directory#user", "name": {"givenName": "Bob", "familyName": "User", "fullName": "Bob User"}}
+    ],
+    "nextPageToken": null
+  },
+  "/admin/directory/v1/groups": {
+    "kind": "admin#directory#groups",
+    "groups": [
+      {"id": "group_mock_001", "email": "team@verifiabl.dev", "name": "Team", "kind": "admin#directory#group"},
+      {"id": "group_mock_002", "email": "eng@verifiabl.dev", "name": "Engineering", "kind": "admin#directory#group"}
+    ],
+    "nextPageToken": null
+  }
+}

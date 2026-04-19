@@ -1,0 +1,21 @@
+{
+  "expensereports/v4/users/mock_user/context/TRAVELER/reports": {
+    "content": [
+      {"reportId": "rpt_mock_001", "reportDate": "2024-03-01", "approvalStatus": "Not Submitted", "claimedAmount": {"value": 525.00, "currencyCode": "USD"}},
+      {"reportId": "rpt_mock_002", "reportDate": "2024-03-15", "approvalStatus": "Approved", "claimedAmount": {"value": 120.50, "currencyCode": "USD"}}
+    ]
+  },
+  "expensereports/v4/users/mock_user/context/TRAVELER/reports/rpt_mock_001": {
+    "reportId": "rpt_mock_001",
+    "reportDate": "2024-03-01",
+    "approvalStatus": "Not Submitted",
+    "approvalStatusId": "A_NOTF",
+    "paymentStatus": "Not Paid",
+    "paymentStatusId": "P_NOTP",
+    "claimedAmount": {"value": 525.00, "currencyCode": "USD"},
+    "approvedAmount": {"value": 525.00, "currencyCode": "USD"},
+    "reportTotal": {"value": 525.00, "currencyCode": "USD"},
+    "currencyCode": "USD",
+    "name": "Mock expense report"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "call": [
+    {"id": "call_mock_001", "type": "webCall", "status": "ended", "assistantId": "asst_mock_001", "createdAt": "2026-03-14T12:00:00.000Z", "updatedAt": "2026-03-14T12:05:00.000Z"},
+    {"id": "call_mock_002", "type": "webCall", "status": "ended", "assistantId": "asst_mock_002", "createdAt": "2026-03-14T11:00:00.000Z", "updatedAt": "2026-03-14T11:02:00.000Z"}
+  ],
+  "assistant": [
+    {"id": "asst_mock_001", "name": "Support Agent", "createdAt": "2026-03-14T12:00:00.000Z", "updatedAt": "2026-03-14T12:00:00.000Z"},
+    {"id": "asst_mock_002", "name": "Sales Bot", "createdAt": "2026-03-14T12:00:00.000Z", "updatedAt": "2026-03-14T12:00:00.000Z"}
+  ]
+}

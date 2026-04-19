@@ -1,0 +1,4 @@
+{
+  "/v2/users/me": {"id": "mock_user", "email": "mock@verifiabl.dev", "type": 1, "first_name": "Mock"},
+  "/v2/users/me/meetings": {"meetings": [{"id": 1234567890, "topic": "Mock Meeting", "type": 2}]}
+}

@@ -1,0 +1,22 @@
+{
+  "queues": [
+    {"id": "que_mock_001", "name": "Content Review", "status": "active", "item_count": 12, "policy_id": "pol_mock_001", "created_at": 1710400000},
+    {"id": "que_mock_002", "name": "Escalations", "status": "active", "item_count": 3, "policy_id": "pol_mock_002", "created_at": 1710400000}
+  ],
+  "items": [
+    {"id": "item_mock_001", "content_id": "cnt_001", "queue_id": "que_mock_001", "status": "pending", "submitted_at": 1710400000, "labels": []},
+    {"id": "item_mock_002", "content_id": "cnt_002", "queue_id": "que_mock_001", "status": "pending", "submitted_at": 1710400001, "labels": []}
+  ],
+  "policies": [
+    {"id": "pol_mock_001", "name": "Community Standards", "rules": [], "updated_at": 1710400000},
+    {"id": "pol_mock_002", "name": "Safety Escalation", "rules": [], "updated_at": 1710400000}
+  ],
+  "labels": [
+    {"id": "lbl_mock_001", "name": "safe", "category": "verdict"},
+    {"id": "lbl_mock_002", "name": "escalate", "category": "action"}
+  ],
+  "workflows": [
+    {"id": "wf_mock_001", "name": "Default Triage", "enabled": true},
+    {"id": "wf_mock_002", "name": "Escalation Path", "enabled": true}
+  ]
+}

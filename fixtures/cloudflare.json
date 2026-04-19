@@ -1,0 +1,34 @@
+{
+  "/client/v4/zones": {
+    "success": true,
+    "result": [
+      {"id": "zone_mock_001", "name": "verifiabl.dev", "status": "active", "paused": false, "type": "full", "development_mode": 0, "name_servers": ["ns1.cloudflare.com", "ns2.cloudflare.com"], "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z", "account": {"id": "acct_mock_001", "name": "Mock Account"}},
+      {"id": "zone_mock_002", "name": "test.com", "status": "active", "paused": false, "type": "full", "development_mode": 0, "name_servers": ["ns1.cloudflare.com", "ns2.cloudflare.com"], "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z", "account": {"id": "acct_mock_001", "name": "Mock Account"}}
+    ],
+    "errors": [],
+    "messages": [],
+    "result_info": {"count": 2, "page": 1, "per_page": 20, "total_count": 2}
+  },
+  "/client/v4/zones/zone_mock_001": {
+    "success": true,
+    "result": {"id": "zone_mock_001", "name": "verifiabl.dev", "status": "active", "paused": false, "type": "full", "development_mode": 0, "name_servers": ["ns1.cloudflare.com", "ns2.cloudflare.com"], "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z", "account": {"id": "acct_mock_001", "name": "Mock Account"}},
+    "errors": [],
+    "messages": []
+  },
+  "/client/v4/zones/zone_mock_001/dns_records": {
+    "success": true,
+    "result": [
+      {"id": "rec_mock_001", "zone_id": "zone_mock_001", "zone_name": "verifiabl.dev", "name": "verifiabl.dev", "type": "A", "content": "198.51.100.4", "ttl": 3600, "proxied": true, "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z"},
+      {"id": "rec_mock_002", "zone_id": "zone_mock_001", "zone_name": "verifiabl.dev", "name": "www.verifiabl.dev", "type": "CNAME", "content": "verifiabl.dev", "ttl": 3600, "proxied": true, "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z"}
+    ],
+    "errors": [],
+    "messages": [],
+    "result_info": {"count": 2, "page": 1, "per_page": 20, "total_count": 2}
+  },
+  "/client/v4/zones/zone_mock_001/dns_records/rec_mock_001": {
+    "success": true,
+    "result": {"id": "rec_mock_001", "zone_id": "zone_mock_001", "zone_name": "verifiabl.dev", "name": "verifiabl.dev", "type": "A", "content": "198.51.100.4", "ttl": 3600, "proxied": true, "created_on": "2014-01-01T05:20:00.12345Z", "modified_on": "2014-01-01T05:20:00.12345Z"},
+    "errors": [],
+    "messages": []
+  }
+}

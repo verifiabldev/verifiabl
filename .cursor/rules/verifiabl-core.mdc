@@ -1,0 +1,39 @@
+---
+description: Core verifiabl.dev standards — minimal LOC, DRY, file boundaries
+alwaysApply: true
+---
+
+# verifiabl.dev Core Standards
+
+## Minimal LOC
+
+- Do NOT create new files. Add to existing files unless the plan explicitly calls for a new one.
+- The canonical file list: `main.py`, `auth.py`, `store.py`, `models.py`, `recorder.py`, `mocks/base.py`, `mocks/{name}.py`.
+- If you think a new file is needed, you are probably wrong. Re-read the SKILL.md.
+
+## DRY — Single Points of Authority
+
+- **Auth/tier logic** lives ONLY in `auth.py`. No tier checks, key lookups, or IP counting elsewhere.
+- **Data access** goes ONLY through `store.read()` / `store.write()`. No direct dict access to store internals from other files.
+- **Dataclasses/enums** are defined ONLY in `models.py`. No inline dataclasses in other files.
+- **Integration discovery** uses ONLY `BaseMock.__subclasses__()`. Never a hardcoded list.
+
+## Routing Rule
+
+- Anonymous (under limit) and free key requests both go through the method check. Only GET passes to the mock router. PUT/POST/PATCH are dropped.
+- Paid key requests bypass the method check — all methods reach the mock router directly.
+- This routing logic lives in `main.py` only.
+
+## Write-Drop Enforcement
+
+- Dropped PUT/POST/PATCH: return valid 200/201, append `X-Verifiabl-Notice` header.
+- Never return an error status for a dropped write. The mock must look like it worked.
+
+## Credentials
+
+- All secrets from `os.environ` via `python-dotenv`. Never hardcoded, never in default args.
+- verifiabl's own sandbox keys are for the recorder only. Agent-facing endpoints never use them.
+
+## No Narration Comments
+
+- Do not add comments that restate what the code does. Only comment non-obvious intent or constraints.

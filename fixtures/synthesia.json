@@ -1,0 +1,62 @@
+{
+  "/v2/videos": {
+    "videos": [
+      {
+        "id": "video_mock_001",
+        "status": "complete",
+        "createdAt": 1710400000,
+        "lastUpdatedAt": 1710400060,
+        "title": "Welcome",
+        "description": "",
+        "visibility": "private",
+        "download": "https://cdn.synthesia.io/v/001.mp4",
+        "duration": "0:45",
+        "thumbnail": {"image": null, "gif": null},
+        "test": false,
+        "callbackId": null
+      },
+      {
+        "id": "video_mock_002",
+        "status": "in_progress",
+        "createdAt": 1710400100,
+        "lastUpdatedAt": null,
+        "title": "",
+        "description": "",
+        "visibility": "private",
+        "download": null,
+        "duration": null,
+        "thumbnail": {"image": null, "gif": null},
+        "test": false,
+        "callbackId": null
+      }
+    ],
+    "nextOffset": 2
+  },
+  "/v2/templates": {
+    "templates": [
+      {
+        "id": "tpl_mock_001",
+        "templateId": "tpl_mock_001",
+        "createdAt": 1710400000,
+        "lastUpdatedAt": 1710400000,
+        "title": "Onboarding",
+        "description": "",
+        "visibility": "private",
+        "variables": [{"name": "name", "variableId": "var_001"}],
+        "templateData": {}
+      },
+      {
+        "id": "tpl_mock_002",
+        "templateId": "tpl_mock_002",
+        "createdAt": 1710400100,
+        "lastUpdatedAt": 1710400100,
+        "title": "Product Demo",
+        "description": "",
+        "visibility": "private",
+        "variables": [{"name": "product", "variableId": "var_002"}],
+        "templateData": {}
+      }
+    ],
+    "nextOffset": 2
+  }
+}

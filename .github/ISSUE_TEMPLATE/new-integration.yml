@@ -1,0 +1,37 @@
+name: New Integration
+description: Request or claim a new API integration
+labels: ["integration", "good first issue"]
+body:
+  - type: input
+    id: api_name
+    attributes:
+      label: API Name
+      placeholder: e.g. Twilio
+    validations:
+      required: true
+  - type: input
+    id: spec_url
+    attributes:
+      label: OpenAPI Spec URL
+      placeholder: e.g. https://github.com/twilio/twilio-oai
+  - type: dropdown
+    id: sandbox_tier
+    attributes:
+      label: Sandbox Availability
+      options:
+        - Free (no approval needed)
+        - Requires developer signup
+        - Enterprise-gated
+    validations:
+      required: true
+  - type: input
+    id: sandbox_url
+    attributes:
+      label: Sandbox Signup URL
+      placeholder: e.g. https://www.twilio.com/try-twilio
+  - type: checkboxes
+    id: claim
+    attributes:
+      label: Are you planning to submit a PR for this?
+      options:
+        - label: "Yes, I'll work on this"

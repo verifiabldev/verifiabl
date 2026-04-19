@@ -1,0 +1,23 @@
+{
+  "/fscmRestApi/resources/11.13.18.05/invoices": {
+    "items": [
+      {"InvoicesUniqID": "inv_mock_001", "InvoiceNumber": "INV-001", "InvoiceAmount": 2000, "Status": "Validated"},
+      {"InvoicesUniqID": "inv_mock_002", "InvoiceNumber": "INV-002", "InvoiceAmount": 1500, "Status": "Draft"}
+    ],
+    "count": 2
+  },
+  "/fscmRestApi/resources/11.13.18.05/cashBankAccounts": {
+    "items": [
+      {"BankAccountId": 300100123456789, "BankAccountName": "Operating Account", "CurrencyCode": "USD"},
+      {"BankAccountId": 300100123456790, "BankAccountName": "Payables Account", "CurrencyCode": "USD"}
+    ],
+    "count": 2
+  },
+  "/fscmRestApi/resources/11.13.18.05/journalBatches": {
+    "items": [
+      {"JeBatchId": 400100123456789, "BatchName": "MAR-2024-01", "Status": "Posted"},
+      {"JeBatchId": 400100123456790, "BatchName": "MAR-2024-02", "Status": "Complete"}
+    ],
+    "count": 2
+  }
+}

@@ -1,0 +1,21 @@
+name = "verifiabl"
+main = "worker.py"
+compatibility_date = "2026-03-19"
+compatibility_flags = ["python_workers"]
+
+[vars]
+PUBLIC_BASE_URL = "https://verifiabl.dev"
+STRICT_HEALTH_CHECKS = "1"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "verifiabl-prod"
+database_id = "ae7eac1a-ee1a-43e9-84ea-c24adb2123ad"
+
+[[kv_namespaces]]
+binding = "STATE_KV"
+id = "e613711d71654f6b89ec6a1f5057e093"
+
+[[routes]]
+pattern = "verifiabl.dev"
+custom_domain = true

@@ -1,0 +1,28 @@
+{
+  "/services/rest/record/v1/metadata-catalog": {"links": [], "items": [{"name": "customer"}, {"name": "salesOrder"}]},
+  "/services/rest/record/v1/customer": {
+    "links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/customer?limit=1000&offset=0"}],
+    "items": [
+      {"links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/customer/107"}], "id": "107", "companyName": "Acme Corp", "email": "acme@verifiabl.dev"},
+      {"links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/customer/108"}], "id": "108", "companyName": "Beta LLC", "email": "beta@verifiabl.dev"}
+    ],
+    "totalResults": 2
+  },
+  "/services/rest/record/v1/customer/107": {"id": "107", "companyName": "Acme Corp", "email": "acme@verifiabl.dev", "entityId": "CUST-001"},
+  "/services/rest/record/v1/salesOrder": {
+    "links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/salesOrder?limit=1000&offset=0"}],
+    "items": [
+      {"links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/salesOrder/1001"}], "id": "1001", "tranId": "SO-001", "entity": {"id": "107"}},
+      {"links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/record/v1/salesOrder/1002"}], "id": "1002", "tranId": "SO-002", "entity": {"id": "108"}}
+    ],
+    "totalResults": 2
+  },
+  "/services/rest/record/v1/salesOrder/1001": {"id": "1001", "tranId": "SO-001", "entity": {"id": "107"}, "total": 2000},
+  "/services/rest/query/v1/suiteql": {
+    "links": [{"rel": "self", "href": "https://1234567.suitetalk.api.netsuite.com/services/rest/query/v1/suiteql"}],
+    "count": 2,
+    "offset": 0,
+    "totalResults": 2,
+    "items": [{"links": [], "id": "107", "companyname": "Acme Corp"}, {"links": [], "id": "108", "companyname": "Beta LLC"}]
+  }
+}

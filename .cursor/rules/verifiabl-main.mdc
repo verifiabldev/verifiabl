@@ -1,0 +1,32 @@
+---
+description: Guards main.py consolidation — all routes and wiring live here
+globs: main.py
+alwaysApply: false
+---
+
+# main.py Rules
+
+## What Lives Here (all of it)
+
+- FastAPI app instance
+- Auth middleware (calls `auth.resolve_request`, enforces tier write-drop)
+- Catch-all mock router (dispatches to `BaseMock` subclasses)
+- `/registry` endpoint
+- `/auth/magic` and `/auth/verify` endpoints
+- `/usage` endpoint
+- APScheduler cron setup (calls `recorder.run_all()`)
+- Static file mount for `dashboard/`
+
+## Do NOT Split
+
+- No new router files. The catch-all route is ~15 LOC.
+- No `onboarding.py`. Magic link endpoints are two functions.
+- No `usage.py`. Usage is one GET handler reading from `store`.
+
+## LOC Budget: ~100 lines
+
+If `main.py` exceeds 120 lines, something that belongs in `auth.py`, `store.py`, or `models.py` has leaked in. Move it there.
+
+## Autodiscovery Only
+
+Mock routing MUST use `BaseMock.__subclasses__()` to find integrations. Never a hardcoded import list. Adding `mocks/foo.py` must be sufficient to register it.

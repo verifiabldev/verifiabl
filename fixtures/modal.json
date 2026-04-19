@@ -1,0 +1,29 @@
+{
+  "/v1/apps": {
+    "apps": [
+      {"app_id": "ap_mock_verifiabl01", "name": "whisper-pod-transcriber", "state": "deployed", "created_at": 1710400000},
+      {"app_id": "ap_mock_verifiabl02", "name": "my-shared-app", "state": "deployed", "created_at": 1710400100}
+    ]
+  },
+  "/v1/apps/ap_mock_verifiabl01": {
+    "app_id": "ap_mock_verifiabl01",
+    "name": "whisper-pod-transcriber",
+    "state": "deployed",
+    "created_at": 1710400000,
+    "web_endpoints": [{"label": "fastapi_app", "url": "https://modal-labs-whisper-pod-transcriber-fastapi-app.modal.run"}]
+  },
+  "/v1/apps/ap_mock_verifiabl01/deployments": {
+    "deployments": [
+      {"version": 2, "deployed_at": 1710400000, "state": "active"},
+      {"version": 1, "deployed_at": 1710300000, "state": "replaced"}
+    ]
+  },
+  "/v1/runs/fc_mock_001": {
+    "run_id": "fc_mock_001",
+    "status": "completed",
+    "function_name": "square",
+    "app_name": "my-shared-app",
+    "created_at": 1710400000,
+    "finished_at": 1710400001
+  }
+}

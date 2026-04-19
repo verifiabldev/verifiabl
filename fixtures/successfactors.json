@@ -1,0 +1,18 @@
+{
+  "User": [
+    {"userId": "user_mock_001", "username": "alice", "status": "ACTIVE", "email": "alice@verifiabl.dev"},
+    {"userId": "user_mock_002", "username": "bob", "status": "ACTIVE", "email": "bob@verifiabl.dev"}
+  ],
+  "JobRequisition": [
+    {"jobReqId": "jr_mock_001", "status": "OPEN", "templateId": "5427", "numberOfOpenings": 1},
+    {"jobReqId": "jr_mock_002", "status": "OPEN", "templateId": "5427", "numberOfOpenings": 2}
+  ],
+  "PerPerson": [
+    {"personIdExternal": "per_mock_001", "firstName": "Alice", "lastName": "Example"},
+    {"personIdExternal": "per_mock_002", "firstName": "Bob", "lastName": "Sample"}
+  ],
+  "Candidate": [
+    {"candidateId": "can_mock_001", "firstName": "Jane", "lastName": "Doe", "status": "NEW"},
+    {"candidateId": "can_mock_002", "firstName": "John", "lastName": "Smith", "status": "SCREENING"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {"id": "mistral-small-latest", "object": "model", "created": 1710400000, "owned_by": "mistralai", "capabilities": {"completion_chat": true, "completion_fim": false, "function_calling": true, "fine_tuning": false, "vision": false, "classification": false}, "name": null, "description": null, "max_context_length": 32768},
+      {"id": "mistral-embed", "object": "model", "created": 1710400000, "owned_by": "mistralai", "capabilities": {"completion_chat": false, "completion_fim": false, "function_calling": false, "fine_tuning": false, "vision": false, "classification": false}, "name": null, "description": null, "max_context_length": 8192}
+    ]
+  },
+  "/v1/models/mistral-small-latest": {
+    "id": "mistral-small-latest",
+    "object": "model",
+    "created": 1710400000,
+    "owned_by": "mistralai",
+    "capabilities": {"completion_chat": true, "completion_fim": false, "function_calling": true, "fine_tuning": false, "vision": false, "classification": false},
+    "name": null,
+    "description": null,
+    "max_context_length": 32768
+  },
+  "/v1/files": {
+    "object": "list",
+    "data": [
+      {"id": "file_mock_001", "object": "file", "bytes": 1024, "created_at": 1710400000, "filename": "train.jsonl", "purpose": "fine-tune", "sample_type": "instruct", "source": "upload", "num_lines": 2, "mimetype": "application/jsonl", "signature": null},
+      {"id": "file_mock_002", "object": "file", "bytes": 2048, "created_at": 1710400001, "filename": "prompts.jsonl", "purpose": "fine-tune", "sample_type": "instruct", "source": "upload", "num_lines": 3, "mimetype": "application/jsonl", "signature": null}
+    ],
+    "total": 2
+  },
+  "/v1/files/file_mock_001": {
+    "id": "file_mock_001",
+    "object": "file",
+    "bytes": 1024,
+    "created_at": 1710400000,
+    "filename": "train.jsonl",
+    "purpose": "fine-tune",
+    "sample_type": "instruct",
+    "source": "upload",
+    "num_lines": 2,
+    "mimetype": "application/jsonl",
+    "signature": null
+  }
+}

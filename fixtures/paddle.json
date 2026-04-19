@@ -1,0 +1,53 @@
+{
+  "/customers": {
+    "data": [
+      {"id": "ctm_mock_001", "email": "alice@verifiabl.dev", "name": "Alice", "status": "active", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+      {"id": "ctm_mock_002", "email": "bob@verifiabl.dev", "name": "Bob", "status": "active", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"}
+    ],
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/customers/ctm_mock_verifiabl": {
+    "data": {"id": "ctm_mock_verifiabl", "email": "test@verifiabl.dev", "name": null, "status": "active", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/products": {
+    "data": [
+      {"id": "pro_mock_001", "name": "Pro plan", "description": null, "status": "active", "tax_category": "standard", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+      {"id": "pro_mock_002", "name": "Enterprise", "description": null, "status": "active", "tax_category": "standard", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"}
+    ],
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/products/pro_mock_001": {
+    "data": {"id": "pro_mock_001", "name": "Pro plan", "description": null, "status": "active", "tax_category": "standard", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/prices": {
+    "data": [
+      {"id": "pri_mock_001", "product_id": "pro_mock_001", "description": "Monthly", "unit_price": {"amount": "2000", "currency_code": "USD"}, "status": "active", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+      {"id": "pri_mock_002", "product_id": "pro_mock_002", "description": "Annual", "unit_price": {"amount": "20000", "currency_code": "USD"}, "status": "active", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"}
+    ],
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/subscriptions": {
+    "data": [
+      {"id": "sub_mock_001", "customer_id": "ctm_mock_001", "status": "active", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z", "next_billed_at": "2024-03-14T12:00:00Z"},
+      {"id": "sub_mock_002", "customer_id": "ctm_mock_002", "status": "active", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z", "next_billed_at": "2024-03-14T12:00:00Z"}
+    ],
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/subscriptions/sub_mock_001": {
+    "data": {"id": "sub_mock_001", "customer_id": "ctm_mock_001", "status": "active", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z", "next_billed_at": "2024-03-14T12:00:00Z"},
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/transactions": {
+    "data": [
+      {"id": "txn_mock_001", "customer_id": "ctm_mock_001", "status": "completed", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+      {"id": "txn_mock_002", "customer_id": "ctm_mock_002", "status": "billed", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"}
+    ],
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  },
+  "/transactions/txn_mock_001": {
+    "data": {"id": "txn_mock_001", "customer_id": "ctm_mock_001", "status": "completed", "currency_code": "USD", "created_at": "2024-03-14T12:00:00Z", "updated_at": "2024-03-14T12:00:00Z"},
+    "meta": {"request_id": "req_mock_verifiabl", "pagination": {"per_page": 50, "next": null}}
+  }
+}

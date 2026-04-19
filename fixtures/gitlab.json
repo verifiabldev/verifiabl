@@ -1,0 +1,18 @@
+{
+  "/api/v4/user": {"id": 1, "username": "mockuser", "email": "mock@verifiabl.dev", "name": "Mock User"},
+  "/api/v4/projects": [
+    {"id": 1, "name": "mock-project", "path_with_namespace": "group/mock-project", "default_branch": "main", "web_url": "https://gitlab.com/group/mock-project"},
+    {"id": 2, "name": "other-repo", "path_with_namespace": "group/other-repo", "default_branch": "main", "web_url": "https://gitlab.com/group/other-repo"}
+  ],
+  "/api/v4/projects/1/issues": [
+    {"id": 1, "iid": 1, "title": "Mock issue", "state": "opened", "created_at": "2024-03-14T12:00:00.000Z"},
+    {"id": 2, "iid": 2, "title": "Another issue", "state": "opened", "created_at": "2024-03-14T12:00:00.000Z"}
+  ],
+  "/api/v4/projects/1/merge_requests": [
+    {"id": 1, "iid": 1, "title": "Mock MR", "state": "opened", "source_branch": "feature", "target_branch": "main", "created_at": "2024-03-14T12:00:00.000Z"}
+  ],
+  "/api/v4/projects/1/pipelines": [
+    {"id": 1, "status": "success", "ref": "main", "sha": "abc123_mock", "created_at": "2024-03-14T12:00:00.000Z"},
+    {"id": 2, "status": "pending", "ref": "main", "sha": "def456_mock", "created_at": "2024-03-14T12:01:00.000Z"}
+  ]
+}

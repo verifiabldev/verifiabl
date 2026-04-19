@@ -1,0 +1,14 @@
+{
+  "people": [
+    {"id": "person_mock_001", "emails": ["alice@verifiabl.dev"], "displayName": "Alice", "created": "2024-03-14T12:00:00.000Z"},
+    {"id": "person_mock_002", "emails": ["bob@verifiabl.dev"], "displayName": "Bob", "created": "2024-03-14T12:00:00.000Z"}
+  ],
+  "rooms": [
+    {"id": "room_mock_001", "title": "General", "type": "group", "created": "2024-03-14T12:00:00.000Z", "lastActivity": "2024-03-14T14:00:00.000Z"},
+    {"id": "room_mock_002", "title": "Engineering", "type": "group", "created": "2024-03-14T12:00:00.000Z", "lastActivity": "2024-03-14T13:00:00.000Z"}
+  ],
+  "messages": [
+    {"id": "msg_mock_001", "roomId": "room_mock_001", "personId": "person_mock_001", "personEmail": "alice@verifiabl.dev", "text": "Hello", "created": "2024-03-14T13:00:00.000Z"},
+    {"id": "msg_mock_002", "roomId": "room_mock_001", "personId": "person_mock_002", "personEmail": "bob@verifiabl.dev", "text": "Hi there", "created": "2024-03-14T13:01:00.000Z"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "/rest/api/3/myself": {"accountId": "mock123", "displayName": "Mock User", "emailAddress": "mock@verifiabl.dev"},
+  "/rest/api/3/project": [
+    {"id": "1", "key": "MOCK", "name": "Mock Project", "self": "https://verifiabl.dev/atlassian/rest/api/3/project/1"},
+    {"id": "2", "key": "DEMO", "name": "Demo Project", "self": "https://verifiabl.dev/atlassian/rest/api/3/project/2"}
+  ],
+  "/rest/api/3/issue/MOCK-1": {
+    "id": "10001",
+    "key": "MOCK-1",
+    "self": "https://verifiabl.dev/atlassian/rest/api/3/issue/MOCK-1",
+    "fields": {"summary": "Mock issue", "status": {"id": "1", "name": "To Do"}, "issuetype": {"name": "Task"}, "project": {"key": "MOCK", "name": "Mock Project"}}
+  },
+  "/rest/api/3/status": [
+    {"id": "1", "name": "To Do", "statusCategory": {"key": "new"}},
+    {"id": "2", "name": "In Progress", "statusCategory": {"key": "indeterminate"}},
+    {"id": "3", "name": "Done", "statusCategory": {"key": "done"}}
+  ],
+  "/rest/api/3/issue/MOCK-1/comment": {
+    "comments": [
+      {"id": "10101", "body": {"type": "doc", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "First comment"}]}]}, "author": {"displayName": "Mock User"}, "created": "2024-03-14T12:00:00.000+0000"},
+      {"id": "10102", "body": {"type": "doc", "content": [{"type": "paragraph", "content": [{"type": "text", "text": "Second comment"}]}]}, "author": {"displayName": "Mock User"}, "created": "2024-03-14T13:00:00.000+0000"}
+    ],
+    "total": 2
+  }
+}

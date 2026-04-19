@@ -1,0 +1,6 @@
+{
+  "/v1/me": {"id": "user_mock_verifiabl", "handle": "mockuser", "img_url": "https://verifiabl.dev/avatar.png", "email": "mock@verifiabl.dev"},
+  "/v1/files/file_mock_001": {"name": "Mock Design", "role": "editor", "lastModified": "2024-03-14T12:00:00.000Z", "editorType": "figma", "version": "1710400000", "document": {"id": "0:0", "name": "Document", "type": "DOCUMENT", "children": [{"id": "1:2", "name": "Page 1", "type": "CANVAS", "children": []}]}, "components": {}, "componentSets": {}, "schemaVersion": 0, "styles": {}},
+  "/v1/teams/team_mock_001/projects": {"name": "Mock Team", "projects": [{"id": "proj_mock_001", "name": "Design System"}, {"id": "proj_mock_002", "name": "Marketing"}]},
+  "/v1/projects/proj_mock_001/files": {"name": "Design System", "files": [{"key": "file_mock_001", "name": "Components", "thumbnail_url": "https://verifiabl.dev/thumb.png", "last_modified": "2024-03-14T12:00:00.000Z"}, {"key": "file_mock_002", "name": "Tokens", "last_modified": "2024-03-13T10:00:00.000Z"}]}
+}

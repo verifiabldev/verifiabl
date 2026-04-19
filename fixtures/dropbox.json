@@ -1,0 +1,7 @@
+{
+  "/2/users/get_current_account": {"account_id": "dbid:mock_verifiabl", "name": {"display_name": "Mock User"}, "email": "mock@verifiabl.dev"},
+  "/2/files/list_folder": {"entries": [{"name": "mock.txt", ".tag": "file", "id": "id:mock_file_001", "path_lower": "/mock.txt", "size": 1024}, {"name": "docs", ".tag": "folder", "id": "id:mock_folder_001", "path_lower": "/docs"}], "cursor": "mock_cursor_verifiabl", "has_more": false},
+  "/2/files/list_folder/continue": {"entries": [], "cursor": "mock_cursor_end", "has_more": false},
+  "/2/files/get_metadata": {"name": "mock.txt", ".tag": "file", "id": "id:mock_file_001", "path_lower": "/mock.txt", "size": 1024},
+  "/2/files/get_temporary_link": {"link": "https://dl.dropboxusercontent.com/mock/verifiabl_temp", "metadata": {"name": "mock.txt", ".tag": "file", "id": "id:mock_file_001", "size": 1024}}
+}

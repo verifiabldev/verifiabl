@@ -1,0 +1,31 @@
+{
+  "/v1/models": {
+    "object": "list",
+    "data": [
+      {"id": "gpt-4o", "object": "model", "created": 1710400000, "owned_by": "system"},
+      {"id": "gpt-4o-mini", "object": "model", "created": 1710400000, "owned_by": "system"},
+      {"id": "text-embedding-3-small", "object": "model", "created": 1710400000, "owned_by": "system"}
+    ]
+  },
+  "/v1/models/gpt-4o": {
+    "id": "gpt-4o",
+    "object": "model",
+    "created": 1710400000,
+    "owned_by": "system"
+  },
+  "/v1/files": {
+    "object": "list",
+    "data": [
+      {"id": "file_mock_001", "object": "file", "bytes": 1024, "created_at": 1710400000, "filename": "train.jsonl", "purpose": "fine-tune"},
+      {"id": "file_mock_002", "object": "file", "bytes": 2048, "created_at": 1710400001, "filename": "prompts.jsonl", "purpose": "assistants"}
+    ]
+  },
+  "/v1/files/file_mock_001": {
+    "id": "file_mock_001",
+    "object": "file",
+    "bytes": 1024,
+    "created_at": 1710400000,
+    "filename": "train.jsonl",
+    "purpose": "fine-tune"
+  }
+}

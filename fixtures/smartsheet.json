@@ -1,0 +1,62 @@
+{
+  "/sheets": {
+    "data": [
+      {"id": 1234567890, "name": "Project Tracker", "owner": "", "ownerId": 0},
+      {"id": 9876543210, "name": "Task List", "owner": "", "ownerId": 0}
+    ],
+    "pageNumber": 1,
+    "pageSize": 100,
+    "totalCount": 2,
+    "totalPages": 1
+  },
+  "/sheets/1234567890": {
+    "id": 1234567890,
+    "name": "Project Tracker",
+    "accessLevel": "ADMIN",
+    "ownerId": 100,
+    "owner": "user@verifiabl.dev",
+    "permalink": "https://app.smartsheet.com/sheets/xxx",
+    "version": 1,
+    "totalRowCount": 2,
+    "createdAt": "2019-08-24T14:15:22Z",
+    "modifiedAt": "2019-08-24T14:15:22Z",
+    "columns": [
+      {"id": 101, "title": "Task", "type": "TEXT_NUMBER", "index": 0},
+      {"id": 102, "title": "Status", "type": "PICKLIST", "index": 1}
+    ],
+    "rows": [
+      {"id": 201, "rowNumber": 1, "sheetId": 1234567890, "cells": [{"columnId": 101, "value": "Setup"}, {"columnId": 102, "value": "Done"}]},
+      {"id": 202, "rowNumber": 2, "sheetId": 1234567890, "cells": [{"columnId": 101, "value": "Review"}, {"columnId": 102, "value": "In Progress"}]}
+    ]
+  },
+  "/sheets/1234567890/rows": {
+    "data": [
+      {"id": 201, "rowNumber": 1, "sheetId": 1234567890, "cells": [{"columnId": 101, "value": "Setup"}, {"columnId": 102, "value": "Done"}]},
+      {"id": 202, "rowNumber": 2, "sheetId": 1234567890, "cells": [{"columnId": 101, "value": "Review"}, {"columnId": 102, "value": "In Progress"}]}
+    ],
+    "pageNumber": 1,
+    "pageSize": 100,
+    "totalCount": 2,
+    "totalPages": 1
+  },
+  "/sheets/1234567890/columns": {
+    "data": [
+      {"id": 101, "title": "Task", "type": "TEXT_NUMBER", "index": 0},
+      {"id": 102, "title": "Status", "type": "PICKLIST", "index": 1}
+    ],
+    "pageNumber": 1,
+    "pageSize": 100,
+    "totalCount": 2,
+    "totalPages": 1
+  },
+  "/users/me": {
+    "data": {
+      "id": 100,
+      "email": "user@verifiabl.dev",
+      "firstName": "Mock",
+      "lastName": "User",
+      "admin": false,
+      "licensedSheetCreator": true
+    }
+  }
+}

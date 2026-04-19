@@ -1,0 +1,41 @@
+{
+  "/api/v2/databases": {
+    "items": [
+      {"name": "MOCK_DB", "owner": "ACCOUNTADMIN", "createdOn": "1710400000000"},
+      {"name": "SAMPLE_DB", "owner": "ACCOUNTADMIN", "createdOn": "1710400001000"}
+    ]
+  },
+  "/api/v2/databases/MOCK_DB/schemas": {
+    "items": [
+      {"name": "PUBLIC", "databaseName": "MOCK_DB", "owner": "ACCOUNTADMIN"},
+      {"name": "INFO_SCHEMA", "databaseName": "MOCK_DB", "owner": "ACCOUNTADMIN"}
+    ]
+  },
+  "/api/v2/databases/MOCK_DB/schemas/PUBLIC/tables": {
+    "items": [
+      {"name": "MOCK_TABLE", "schemaName": "PUBLIC", "databaseName": "MOCK_DB", "rowCount": 100},
+      {"name": "USERS", "schemaName": "PUBLIC", "databaseName": "MOCK_DB", "rowCount": 42}
+    ]
+  },
+  "/api/v2/warehouses": {
+    "items": [
+      {"name": "COMPUTE_WH", "size": "SMALL", "state": "STARTED"},
+      {"name": "REPORTING_WH", "size": "MEDIUM", "state": "SUSPENDED"}
+    ]
+  },
+  "/api/v2/statements/019c06a4-0000-df4f-0000-00100006589e": {
+    "resultSetMetaData": {
+      "numRows": 2,
+      "format": "jsonv2",
+      "rowType": [{"name": "ID", "type": "fixed", "precision": 19, "scale": 0, "nullable": false}],
+      "partitionInfo": [{"rowCount": 2, "uncompressedSize": 256}]
+    },
+    "data": [["1"], ["2"]],
+    "code": "090001",
+    "statementStatusUrl": "/api/v2/statements/019c06a4-0000-df4f-0000-00100006589e",
+    "sqlState": "00000",
+    "statementHandle": "019c06a4-0000-df4f-0000-00100006589e",
+    "message": "Statement executed successfully.",
+    "createdOn": 1710400000000
+  }
+}

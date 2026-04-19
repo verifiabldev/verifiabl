@@ -1,0 +1,35 @@
+{
+  "/v1/me": {
+    "id": "user_mock_verifiabl",
+    "email": "dev@verifiabl.dev",
+    "name": "Mock User",
+    "created_at": 1710400000
+  },
+  "/v1/tables": {
+    "data": [
+      {"id": "tbl_mock_001", "name": "Leads", "created_at": 1710400000, "row_count": 42},
+      {"id": "tbl_mock_002", "name": "Companies", "created_at": 1710400001, "row_count": 12}
+    ]
+  },
+  "/v1/tables/tbl_mock_001": {
+    "id": "tbl_mock_001",
+    "name": "Leads",
+    "created_at": 1710400000,
+    "row_count": 42
+  },
+  "/v1/tables/tbl_mock_001/records": {
+    "records": [
+      {"id": "rec_mock_001", "cells": {"name": "Jane Doe", "email": "jane@verifiabl.dev"}},
+      {"id": "rec_mock_002", "cells": {"name": "John Smith", "email": "john@verifiabl.dev"}}
+    ]
+  },
+  "/v1/tables/tbl_mock_001/count": {
+    "count": 42
+  },
+  "/v1/companies/search": {
+    "data": [
+      {"id": "co_mock_001", "name": "Acme Inc", "domain": "verifiabl.dev", "industry": "Software"},
+      {"id": "co_mock_002", "name": "Beta Corp", "domain": "betacorp.com", "industry": "Technology"}
+    ]
+  }
+}

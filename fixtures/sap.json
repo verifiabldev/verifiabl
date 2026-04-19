@@ -1,0 +1,18 @@
+{
+  "/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner": {
+    "d": {
+      "results": [
+        {"BusinessPartner": "bp_mock_001", "FirstName": "Alice", "LastName": "Acme", "CreationDate": "/Date(1710400000000)/"},
+        {"BusinessPartner": "bp_mock_002", "FirstName": "Bob", "LastName": "Builders", "CreationDate": "/Date(1710400000000)/"}
+      ]
+    }
+  },
+  "/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder": {
+    "d": {
+      "results": [
+        {"SalesOrder": "so_mock_001", "SalesOrderType": "OR", "SoldToParty": "bp_mock_001", "TotalNetAmount": "1200.00", "TransactionCurrency": "USD"},
+        {"SalesOrder": "so_mock_002", "SalesOrderType": "OR", "SoldToParty": "bp_mock_002", "TotalNetAmount": "800.50", "TransactionCurrency": "USD"}
+      ]
+    }
+  }
+}

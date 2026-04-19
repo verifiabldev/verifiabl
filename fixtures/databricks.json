@@ -1,0 +1,33 @@
+{
+  "/api/2.0/clusters/list": {
+    "clusters": [
+      {"cluster_id": "0923-164208-meows279", "cluster_name": "mock_cluster_1", "state": "RUNNING", "spark_context_id": 1},
+      {"cluster_id": "0923-164209-meows280", "cluster_name": "mock_cluster_2", "state": "TERMINATED", "spark_context_id": 2}
+    ]
+  },
+  "/api/2.0/clusters/get": {
+    "cluster_id": "0923-164208-meows279",
+    "cluster_name": "mock_cluster_1",
+    "state": "RUNNING",
+    "spark_version": "14.3.x-scala2.12",
+    "node_type_id": "i3.xlarge"
+  },
+  "/api/2.2/jobs/list": {
+    "jobs": [
+      {"job_id": 11223344, "created_time": 1710400000000, "creator_user_name": "user@verifiabl.dev", "settings": {"name": "Mock ETL job", "format": "SINGLE_TASK"}},
+      {"job_id": 11223345, "created_time": 1710400001000, "creator_user_name": "user@verifiabl.dev", "settings": {"name": "Mock report job", "format": "MULTI_TASK"}}
+    ]
+  },
+  "/api/2.2/jobs/get": {
+    "job_id": 11223344,
+    "created_time": 1710400000000,
+    "creator_user_name": "user@verifiabl.dev",
+    "settings": {"name": "Mock ETL job", "format": "SINGLE_TASK", "max_concurrent_runs": 1}
+  },
+  "/api/2.0/workspace/list": {
+    "objects": [
+      {"path": "/Users/user@verifiabl.dev/Notebooks", "object_type": "DIRECTORY", "language": null},
+      {"path": "/Users/user@verifiabl.dev/ETL", "object_type": "NOTEBOOK", "language": "PYTHON"}
+    ]
+  }
+}

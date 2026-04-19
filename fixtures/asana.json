@@ -1,0 +1,28 @@
+{
+  "/api/1.0/workspaces": {
+    "data": [
+      {"gid": "12345", "resource_type": "workspace", "name": "Mock Workspace"},
+      {"gid": "67890", "resource_type": "workspace", "name": "Verifiabl Dev"}
+    ]
+  },
+  "/api/1.0/users/me": {
+    "data": {
+      "gid": "1111",
+      "resource_type": "user",
+      "name": "Mock User",
+      "email": "mock@verifiabl.dev"
+    }
+  },
+  "/api/1.0/tasks": {
+    "data": [
+      {"gid": "task_mock_001", "resource_type": "task", "name": "Mock task one", "resource_subtype": "default_task"},
+      {"gid": "task_mock_002", "resource_type": "task", "name": "Mock task two", "resource_subtype": "default_task"}
+    ]
+  },
+  "/api/1.0/projects": {
+    "data": [
+      {"gid": "proj_mock_001", "resource_type": "project", "name": "Mock Project A", "archived": false},
+      {"gid": "proj_mock_002", "resource_type": "project", "name": "Mock Project B", "archived": false}
+    ]
+  }
+}

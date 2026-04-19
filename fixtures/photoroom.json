@@ -1,0 +1,9 @@
+{
+  "/v2/account": {
+    "images": {"available": 100, "subscription": 100},
+    "plan": "basic"
+  },
+  "/v1/account": {
+    "credits": {"available": 100, "subscription": 100}
+  }
+}

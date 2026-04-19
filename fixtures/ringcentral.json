@@ -1,0 +1,25 @@
+{
+  "account": { "id": "1", "status": "Confirmed", "serviceInfo": { "brand": { "name": "RingCentral" } } },
+  "extensions": [
+    { "id": "1", "extensionNumber": "101", "status": "Enabled", "type": "User" },
+    { "id": "2", "extensionNumber": "102", "status": "Enabled", "type": "User" }
+  ],
+  "call_log": [
+    {
+      "id": "call_mock_001",
+      "sessionId": "session_mock_001",
+      "from": { "phoneNumber": "+15551234567" },
+      "to": { "phoneNumber": "+15559876543" },
+      "type": "Voice",
+      "direction": "Outbound",
+      "startTime": "2024-03-10T18:07:52.534Z",
+      "duration": 120,
+      "action": "Phone Call",
+      "legs": []
+    }
+  ],
+  "message_store": [
+    { "id": "msg_mock_001", "type": "SMS", "availability": "Alive", "direction": "Outbound" },
+    { "id": "msg_mock_002", "type": "SMS", "availability": "Alive", "direction": "Inbound" }
+  ]
+}

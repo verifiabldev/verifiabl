@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    {"id": "job_mock_verifiabl", "status": "SUCCESS", "created_at": 1710400000, "updated_at": 1710400100},
+    {"id": "job_mock_002", "status": "PENDING", "created_at": 1710400000, "updated_at": 1710400100}
+  ],
+  "config_versions": [
+    {"version": "running_mock_001", "created_at": 1710400000, "data": {}},
+    {"version": "cfg_mock_001", "created_at": 1710400000, "data": {}}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "/v1/project": {
+    "name": "Mock Project",
+    "id": "proj_mock_verifiabl"
+  },
+  "/v1/publish-info": {
+    "staging": {
+      "deploymentTime": 1710400000,
+      "optimizationStatus": "optimized",
+      "url": "https://mock.framer.website",
+      "currentPageUrl": "https://mock.framer.website/"
+    },
+    "production": {
+      "deploymentTime": 1710300000,
+      "optimizationStatus": "optimized",
+      "url": "https://mock.framer.site",
+      "currentPageUrl": "https://mock.framer.site/"
+    }
+  },
+  "/v1/changed-paths": {
+    "added": ["/about"],
+    "removed": [],
+    "modified": ["/index"]
+  },
+  "/v1/change-contributors": ["mock@verifiabl.dev"],
+  "/v1/collections": {
+    "collections": [
+      {"id": "col_mock_001", "name": "Blog Posts", "managedBy": null, "readonly": false},
+      {"id": "col_mock_002", "name": "Team", "managedBy": "plugin", "readonly": false}
+    ]
+  }
+}

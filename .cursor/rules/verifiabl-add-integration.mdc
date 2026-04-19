@@ -1,0 +1,20 @@
+---
+description: When adding a new mock integration — follow the research → plan → implement → validate workflow
+globs: mocks/**/*.py,fixtures/*.json
+alwaysApply: false
+---
+
+# Adding a New Mock Integration
+
+When the user asks to **add a new integration**, **add a new mock**, or **expand an existing mock**, follow the workflow in:
+
+**`.cursor/skills/verifiabl-dev/ADD-INTEGRATION.md`**
+
+Do not skip phases:
+
+1. **Research** — Community signal + official spec (OpenAPI/SDK/Postman) + changelog feed URL.
+2. **Plan** — Endpoint table (Method, Path, Resource, writes?, Why included); 6–15 endpoints, split by resource if >20.
+3. **Implement** — Mock file with changelog/spec/sandbox header, `BaseMock` + `@route`, schema-faithful bodies; `fixtures/{name}.json`.
+4. **Validate** — Cross-check spec, `writes` flag, `sandbox_base`, `spec_url`, LOC, INTEGRATIONS.md.
+
+Canonical files only: add to `mocks/{name}.py` and `fixtures/{name}.json`; update INTEGRATIONS.md. No new files beyond that split.

@@ -1,0 +1,38 @@
+{
+  "videos": [
+    {
+      "id": "video_mock_001",
+      "status": "COMPLETE",
+      "created_at": 1710400000,
+      "video_id": "video_mock_001",
+      "object": "video",
+      "completed_at": 1710400060,
+      "progress": 100,
+      "error": null,
+      "model": "mirage-video-1-latest",
+      "source_video_id": null,
+      "caption_template_id": null
+    },
+    {
+      "id": "video_mock_002",
+      "status": "PROCESSING",
+      "created_at": 1710400100,
+      "video_id": "video_mock_002",
+      "object": "video",
+      "completed_at": null,
+      "progress": 45,
+      "error": null,
+      "model": "mirage-video-1-latest",
+      "source_video_id": null,
+      "caption_template_id": null
+    }
+  ],
+  "caption_templates": {
+    "data": [
+      {"id": "ctpl_mock_001", "name": "Default", "created_at": 1710400000, "object": "caption_template", "preview_url": "https://captions-cdn.xyz/preview/001.mp4"},
+      {"id": "ctpl_mock_002", "name": "Minimal", "created_at": 1710400100, "object": "caption_template", "preview_url": "https://captions-cdn.xyz/preview/002.mp4"}
+    ],
+    "has_more": false,
+    "object": "list"
+  }
+}

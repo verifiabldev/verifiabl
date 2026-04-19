@@ -1,0 +1,44 @@
+{
+  "/v1/computers-inventory": {
+    "totalCount": 2,
+    "results": [
+      {"id": "1", "general": {"name": "MacBook-Pro-001", "serialNumber": "C02L29ECF8J1", "udid": "udid_mock_001"}},
+      {"id": "2", "general": {"name": "MacBook-Pro-002", "serialNumber": "C02L29ECF8J2", "udid": "udid_mock_002"}}
+    ]
+  },
+  "/v1/computers-inventory/1": {
+    "id": "1",
+    "general": {"name": "MacBook-Pro-001", "serialNumber": "C02L29ECF8J1", "udid": "udid_mock_001", "reportDate": "2026-03-14T12:00:00.000Z"}
+  },
+  "/v1/mobile-devices": {
+    "totalCount": 2,
+    "results": [
+      {"id": "1", "name": "iPhone-001", "udid": "udid_iphone_001", "serialNumber": "SN_001"},
+      {"id": "2", "name": "iPad-001", "udid": "udid_ipad_001", "serialNumber": "SN_002"}
+    ]
+  },
+  "/v1/mobile-devices/1": {
+    "id": "1",
+    "name": "iPhone-001",
+    "udid": "udid_iphone_001",
+    "serialNumber": "SN_001",
+    "wifiMacAddress": "00:11:22:33:44:55"
+  },
+  "/v1/scripts": {
+    "totalCount": 2,
+    "results": [
+      {"id": "1", "name": "Install Developer Utils Script", "info": "Installs utilities", "categoryName": "Developer Tools", "priority": "AFTER"},
+      {"id": "2", "name": "Configure Settings", "info": "Applies settings", "categoryName": "Configuration", "priority": "BEFORE"}
+    ]
+  },
+  "/v1/scripts/1": {
+    "id": "1",
+    "name": "Install Developer Utils Script",
+    "info": "Installs utilities for developers",
+    "notes": "Re-runnable.",
+    "priority": "AFTER",
+    "categoryId": "1",
+    "categoryName": "Developer Tools",
+    "scriptContents": "#!/bin/bash\necho \"Trivial script.\""
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "/api/suppliers": [
+    {"id": 1001, "name": "Acme Supplies", "number": "SUP001", "status": "active", "created-at": "2024-01-15T10:00:00+00:00"},
+    {"id": 1002, "name": "Globex Corp", "number": "SUP002", "status": "active", "created-at": "2024-02-20T14:30:00+00:00"}
+  ],
+  "/api/invoices": [
+    {"id": 2001, "invoice-number": "INV001", "status": "approved", "total": "1500.00", "created-at": "2024-03-01T08:00:00+00:00"},
+    {"id": 2002, "invoice-number": "INV002", "status": "pending_approval", "total": "2200.50", "created-at": "2024-03-05T11:00:00+00:00"}
+  ],
+  "/api/purchase_orders": [
+    {"id": 3001, "po-number": "PO001", "status": "issued", "total": "5000.00", "created-at": "2024-02-10T09:00:00+00:00"},
+    {"id": 3002, "po-number": "PO002", "status": "draft", "total": "1200.00", "created-at": "2024-03-10T14:00:00+00:00"}
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "devices": [
+    {
+      "device_id": "dev_mock_verifiabl",
+      "hostname": "mock-host-01",
+      "platform_name": "Windows",
+      "status": "normal",
+      "last_seen": "2024-03-14T12:00:00Z",
+      "first_seen": "2024-01-01T00:00:00Z",
+      "local_ip": "10.0.0.1",
+      "external_ip": "203.0.113.1",
+      "machine_domain": "verifiabl.dev",
+      "os_version": "Windows 11"
+    },
+    {
+      "device_id": "dev_mock_002",
+      "hostname": "mock-host-02",
+      "platform_name": "Mac",
+      "status": "normal",
+      "last_seen": "2024-03-14T11:00:00Z",
+      "first_seen": "2024-01-15T00:00:00Z",
+      "local_ip": "10.0.0.2",
+      "external_ip": "203.0.113.2",
+      "machine_domain": "verifiabl.dev",
+      "os_version": "macOS 14"
+    }
+  ],
+  "detections": [
+    {
+      "detection_id": "det_mock_001",
+      "severity": 2,
+      "status": "new",
+      "created_timestamp": "2024-03-14T11:00:00Z",
+      "max_confidence": 90,
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter"
+    },
+    {
+      "detection_id": "det_mock_002",
+      "severity": 1,
+      "status": "in_progress",
+      "created_timestamp": "2024-03-14T10:00:00Z",
+      "max_confidence": 85,
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution"
+    }
+  ]
+}

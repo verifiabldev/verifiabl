@@ -1,0 +1,33 @@
+{
+  "/v1beta/models": {
+    "models": [
+      {"name": "models/gemini-2.0-flash", "baseModelId": "gemini-2.0-flash", "version": "2.0", "displayName": "Gemini 2.0 Flash", "inputTokenLimit": 1048576, "outputTokenLimit": 8192, "supportedGenerationMethods": ["generateContent", "generateMessage"]},
+      {"name": "models/gemini-1.5-flash", "baseModelId": "gemini-1.5-flash", "version": "1.5", "displayName": "Gemini 1.5 Flash", "inputTokenLimit": 1048576, "outputTokenLimit": 8192, "supportedGenerationMethods": ["generateContent", "embedContent"]},
+      {"name": "models/text-embedding-004", "baseModelId": "text-embedding-004", "version": "1.0", "displayName": "Text Embedding 004", "inputTokenLimit": 2048, "outputTokenLimit": 1, "supportedGenerationMethods": ["embedContent"]}
+    ],
+    "nextPageToken": null
+  },
+  "/v1beta/models/gemini-2.0-flash": {
+    "name": "models/gemini-2.0-flash",
+    "baseModelId": "gemini-2.0-flash",
+    "version": "2.0",
+    "displayName": "Gemini 2.0 Flash",
+    "inputTokenLimit": 1048576,
+    "outputTokenLimit": 8192,
+    "supportedGenerationMethods": ["generateContent", "generateMessage"]
+  },
+  "/v1beta/files": {
+    "files": [
+      {"name": "files/file_mock_001", "displayName": "train.jsonl", "mimeType": "application/jsonl", "sizeBytes": "1024", "createTime": "2024-03-14T12:00:00Z"},
+      {"name": "files/file_mock_002", "displayName": "prompts.jsonl", "mimeType": "application/jsonl", "sizeBytes": "2048", "createTime": "2024-03-14T12:01:00Z"}
+    ],
+    "nextPageToken": null
+  },
+  "/v1beta/files/file_mock_001": {
+    "name": "files/file_mock_001",
+    "displayName": "train.jsonl",
+    "mimeType": "application/jsonl",
+    "sizeBytes": "1024",
+    "createTime": "2024-03-14T12:00:00Z"
+  }
+}

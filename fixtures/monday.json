@@ -1,0 +1,15 @@
+{
+  "/v2": {
+    "data": {
+      "boards": [
+        {"id": "12345678", "name": "My Amazing CRM Board", "board_kind": "public"},
+        {"id": "12345679", "name": "Sprint Board", "board_kind": "public"}
+      ],
+      "items": [
+        {"id": "item_mock_001", "name": "Lead: Acme Corp", "state": "active"},
+        {"id": "item_mock_002", "name": "Lead: Globex", "state": "active"}
+      ]
+    },
+    "account_id": 98765
+  }
+}

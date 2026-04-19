@@ -1,0 +1,20 @@
+{
+  "/api/now/table/incident": {
+    "result": [
+      {"sys_id": "inc_mock_001", "number": "INC0010001", "short_description": "Mock incident", "state": "2", "sys_created_on": "2024-03-14T12:00:00"},
+      {"sys_id": "inc_mock_002", "number": "INC0010002", "short_description": "Second incident", "state": "1", "sys_created_on": "2024-03-14T13:00:00"}
+    ]
+  },
+  "/api/now/table/change_request": {
+    "result": [
+      {"sys_id": "chg_mock_001", "number": "CHG0010001", "short_description": "Mock change", "state": "1", "phase": "build"},
+      {"sys_id": "chg_mock_002", "number": "CHG0010002", "short_description": "Second change", "state": "3", "phase": "closed"}
+    ]
+  },
+  "/api/now/table/sys_user": {
+    "result": [
+      {"sys_id": "user_mock_001", "user_name": "admin", "email": "admin@verifiabl.dev", "name": "Admin User"},
+      {"sys_id": "user_mock_002", "user_name": "jane.doe", "email": "jane@verifiabl.dev", "name": "Jane Doe"}
+    ]
+  }
+}

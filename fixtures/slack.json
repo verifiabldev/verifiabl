@@ -1,0 +1,9 @@
+{
+  "/api/api.test": {"ok": true},
+  "/api/auth.test": {"ok": true, "url": "https://verifiabl.slack.com/", "team": "verifiabl", "user": "mockbot", "team_id": "T_MOCK", "user_id": "U_MOCK"},
+  "/api/conversations.list": {"ok": true, "channels": [{"id": "C_GENERAL", "name": "general", "is_channel": true, "num_members": 12}, {"id": "C_RANDOM", "name": "random", "is_channel": true, "num_members": 8}]},
+  "/api/conversations.info": {"ok": true, "channel": {"id": "C_GENERAL", "name": "general", "is_channel": true, "topic": {"value": "Mock topic"}}},
+  "/api/conversations.history": {"ok": true, "messages": [{"type": "message", "user": "U_MOCK", "text": "hello world", "ts": "1710400000.000001"}, {"type": "message", "user": "U_MOCK2", "text": "hey there", "ts": "1710400001.000002"}], "has_more": false},
+  "/api/users.list": {"ok": true, "members": [{"id": "U_MOCK", "name": "mockbot", "real_name": "Mock Bot", "is_bot": true}, {"id": "U_MOCK2", "name": "alice", "real_name": "Alice Verifiabl", "is_bot": false}]},
+  "/api/users.info": {"ok": true, "user": {"id": "U_MOCK", "name": "mockbot", "real_name": "Mock Bot", "is_bot": true}}
+}

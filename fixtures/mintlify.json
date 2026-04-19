@@ -1,0 +1,66 @@
+{
+  "/v1/project/update-status/status_mock_verifiabl": {
+    "_id": "status_mock_verifiabl",
+    "projectId": "proj_mock_001",
+    "createdAt": "2026-03-14T12:00:00.000Z",
+    "endedAt": "2026-03-14T12:01:00.000Z",
+    "status": "success",
+    "summary": "Deployment completed",
+    "logs": ["Building...", "Deployed."],
+    "subdomain": "docs",
+    "source": "api",
+    "commit": {
+      "sha": "abc123",
+      "ref": "main",
+      "message": "Update docs",
+      "filesChanged": {"added": [], "modified": ["intro.mdx"], "removed": []}
+    }
+  },
+  "/v1/agent/proj_mock_001/jobs": {
+    "allSessions": [
+      {
+        "sessionId": "sess_mock_001",
+        "subdomain": "docs",
+        "branch": "agent-edit-001",
+        "haulted": true,
+        "haultReason": "completed",
+        "pullRequestLink": "https://github.com/org/repo/pull/1",
+        "messageToUser": "PR created",
+        "todos": [],
+        "userId": "user_001",
+        "title": "Add API section",
+        "createdAt": "2026-03-14T12:00:00.000Z"
+      }
+    ]
+  },
+  "/v1/analytics/proj_mock_001/feedback": {
+    "feedback": [
+      {
+        "id": "fb_mock_001",
+        "path": "/intro",
+        "comment": "Helpful",
+        "createdAt": "2026-03-14T12:00:00.000Z",
+        "source": "contextual",
+        "status": "resolved",
+        "helpful": true,
+        "contact": null
+      }
+    ],
+    "nextCursor": null,
+    "hasMore": false
+  },
+  "/v1/analytics/proj_mock_001/assistant": {
+    "conversations": [
+      {
+        "id": "conv_mock_001",
+        "timestamp": "2026-03-14T12:00:00.000Z",
+        "query": "How do I get started?",
+        "response": "See the quickstart.",
+        "sources": [{"title": "Quickstart", "url": "https://docs.mintlify.app/quickstart"}],
+        "queryCategory": "getting-started"
+      }
+    ],
+    "nextCursor": null,
+    "hasMore": false
+  }
+}

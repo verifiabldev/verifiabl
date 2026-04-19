@@ -1,0 +1,20 @@
+{
+  "me": {"id": "user_mock_verifiabl", "name": "Mock User", "email": "mock@verifiabl.dev"},
+  "teams": [
+    {"id": "team_mock_001", "key": "ENG", "name": "Engineering"},
+    {"id": "team_mock_002", "key": "PD", "name": "Product"}
+  ],
+  "projects": [
+    {"id": "project_mock_001", "name": "Q1 Roadmap", "state": "started"},
+    {"id": "project_mock_002", "name": "Backlog", "state": "planned"}
+  ],
+  "issues": [
+    {"id": "issue_mock_001", "identifier": "ENG-1", "title": "Mock issue", "state": {"id": "state_mock_001", "name": "Todo"}, "createdAt": 1710400000},
+    {"id": "issue_mock_002", "identifier": "ENG-2", "title": "Another issue", "state": {"id": "state_mock_002", "name": "In Progress"}, "createdAt": 1710400000}
+  ],
+  "workflow_states": [
+    {"id": "state_mock_001", "name": "Todo", "type": "unstarted"},
+    {"id": "state_mock_002", "name": "In Progress", "type": "started"},
+    {"id": "state_mock_003", "name": "Done", "type": "completed"}
+  ]
+}

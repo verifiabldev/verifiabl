@@ -1,0 +1,40 @@
+{
+  "assistants": [
+    {
+      "model_id": "model_mock_001",
+      "name": "Support Agent",
+      "type": "inbound",
+      "timezone": "America/New_York"
+    },
+    {
+      "model_id": "model_mock_002",
+      "name": "Sales Bot",
+      "type": "outbound",
+      "timezone": "America/New_York"
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "call_mock_001",
+      "model_id": "model_mock_001",
+      "duration": 120,
+      "call_status": "completed",
+      "type_of_call": "outbound",
+      "transcript": "Agent: Hello. Human: Hi.",
+      "start_time": "1710400000000",
+      "phone_number_to": "+15551234567",
+      "lead_name": "Jane"
+    },
+    {
+      "call_id": "call_mock_002",
+      "model_id": "model_mock_002",
+      "duration": 90,
+      "call_status": "completed",
+      "type_of_call": "outbound",
+      "transcript": "Agent: Hi, this is Sales Bot.",
+      "start_time": "1710399800000",
+      "phone_number_to": "+15559876543",
+      "lead_name": "John"
+    }
+  ]
+}

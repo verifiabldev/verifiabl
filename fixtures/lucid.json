@@ -1,0 +1,12 @@
+{
+  "/documents/search": [
+    {"documentId": "doc_mock_001", "title": "Flowchart", "editUrl": "https://lucid.app/lucidchart/doc_mock_001/edit", "viewUrl": "https://lucid.app/lucidchart/doc_mock_001/view", "version": 1, "pageCount": 1, "canEdit": true, "created": "2024-03-14T12:26:40Z", "creatorId": 12345, "lastModified": "2024-03-14T12:26:40Z", "lastModifiedUserId": 12345, "product": "lucidchart"},
+    {"documentId": "doc_mock_002", "title": "Org Chart", "editUrl": "https://lucid.app/lucidchart/doc_mock_002/edit", "viewUrl": "https://lucid.app/lucidchart/doc_mock_002/view", "version": 1, "pageCount": 2, "canEdit": true, "created": "2024-03-14T12:26:40Z", "creatorId": 12345, "lastModified": "2024-03-14T12:26:40Z", "lastModifiedUserId": 12345, "product": "lucidchart"}
+  ],
+  "/documents/doc_mock_001": {"documentId": "doc_mock_001", "title": "Flowchart", "editUrl": "https://lucid.app/lucidchart/doc_mock_001/edit", "viewUrl": "https://lucid.app/lucidchart/doc_mock_001/view", "version": 1, "pageCount": 1, "canEdit": true, "created": "2024-03-14T12:26:40Z", "creatorId": 12345, "lastModified": "2024-03-14T12:26:40Z", "lastModifiedUserId": 12345, "product": "lucidchart"},
+  "/folders/search": [
+    {"id": 1001, "type": "folder", "name": "My Documents", "parent": null, "created": "2024-03-14T12:26:40Z"},
+    {"id": 1002, "type": "folder", "name": "Projects", "parent": 1001, "created": "2024-03-14T12:26:40Z"}
+  ],
+  "/documents/doc_mock_001/shares/users/12345": {"documentId": "doc_mock_001", "userId": 12345, "role": "edit", "created": "2024-03-14T12:26:40Z"}
+}

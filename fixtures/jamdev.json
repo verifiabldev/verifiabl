@@ -1,0 +1,14 @@
+{
+  "jams": [
+    {"id": "jam_mock_001", "type": "video", "recording_url": "https://jam.dev/r/rec_mock_001", "created_at": 1710400000, "author": {"id": "usr_mock_001", "name": "Mock User"}},
+    {"id": "jam_mock_002", "type": "screenshot", "recording_url": "https://jam.dev/r/rec_mock_002", "created_at": 1710400100, "author": {"id": "usr_mock_001", "name": "Mock User"}}
+  ],
+  "members": [
+    {"id": "usr_mock_001", "name": "Mock User", "email": "mock@verifiabl.dev"},
+    {"id": "usr_mock_002", "name": "Alice", "email": "alice@verifiabl.dev"}
+  ],
+  "folders": [
+    {"id": "fld_mock_001", "name": "Bugs"},
+    {"id": "fld_mock_002", "name": "Feedback"}
+  ]
+}

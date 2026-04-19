@@ -1,0 +1,46 @@
+{
+  "/indexes": {
+    "indexes": [
+      {
+        "name": "mock-index-001",
+        "metric": "cosine",
+        "dimension": 1536,
+        "status": {"ready": true, "state": "Ready"},
+        "host": "mock-index-001.svc.us-east-1.pinecone.io",
+        "spec": {"serverless": {"region": "us-east-1", "cloud": "aws"}},
+        "deletion_protection": "disabled",
+        "vector_type": "dense"
+      },
+      {
+        "name": "mock-index-002",
+        "metric": "cosine",
+        "dimension": 384,
+        "status": {"ready": true, "state": "Ready"},
+        "host": "mock-index-002.svc.us-west1-gcp.pinecone.io",
+        "spec": {"serverless": {"region": "us-west1", "cloud": "gcp"}},
+        "deletion_protection": "disabled",
+        "vector_type": "dense"
+      }
+    ]
+  },
+  "/indexes/mock-index-001": {
+    "name": "mock-index-001",
+    "dimension": 1536,
+    "metric": "cosine",
+    "host": "mock-index-001.svc.us-east-1.pinecone.io",
+    "status": {"ready": true, "state": "Ready"},
+    "spec": {"serverless": {"cloud": "aws", "region": "us-east-1"}},
+    "deletion_protection": "disabled",
+    "vector_type": "dense"
+  },
+  "/indexes/mock-index-002": {
+    "name": "mock-index-002",
+    "dimension": 384,
+    "metric": "cosine",
+    "host": "mock-index-002.svc.us-west1-gcp.pinecone.io",
+    "status": {"ready": true, "state": "Ready"},
+    "spec": {"serverless": {"cloud": "gcp", "region": "us-west1"}},
+    "deletion_protection": "disabled",
+    "vector_type": "dense"
+  }
+}

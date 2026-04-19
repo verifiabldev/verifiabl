@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {"id": "prj_mock_001", "name": "my-app", "framework": "nextjs", "accountId": "team_mock_verifiabl", "createdAt": 1710400000000},
+    {"id": "prj_mock_002", "name": "docs-site", "framework": "vite", "accountId": "team_mock_verifiabl", "createdAt": 1710390000000}
+  ],
+  "deployments": [
+    {"uid": "dpl_mock_001", "id": "dpl_mock_001", "name": "my-app", "url": "my-app-mock.vercel.app", "state": "READY", "readyState": "READY", "projectId": "prj_mock_001", "created": 1710400000000},
+    {"uid": "dpl_mock_002", "id": "dpl_mock_002", "name": "docs-site", "url": "docs-site-mock.vercel.app", "state": "READY", "readyState": "READY", "projectId": "prj_mock_002", "created": 1710390000000}
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "/api/v1/workflows": {
+    "data": [
+      {"id": "wf_mock_001", "name": "Sync to Slack", "active": false, "nodes": [], "connections": {}, "settings": {}, "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"},
+      {"id": "wf_mock_002", "name": "Daily Report", "active": true, "nodes": [], "connections": {}, "settings": {}, "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"}
+    ],
+    "nextCursor": null
+  },
+  "/api/v1/workflows/wf_mock_001": {
+    "id": "wf_mock_001",
+    "name": "Sync to Slack",
+    "active": false,
+    "nodes": [],
+    "connections": {},
+    "settings": {},
+    "createdAt": "2024-03-14T12:00:00.000Z",
+    "updatedAt": "2024-03-14T12:00:00.000Z"
+  },
+  "/api/v1/executions": {
+    "data": [
+      {"id": 1000, "finished": true, "mode": "manual", "status": "success", "startedAt": "2024-03-14T12:00:00.000Z", "stoppedAt": "2024-03-14T12:00:05.000Z", "workflowId": "wf_mock_001"},
+      {"id": 1001, "finished": true, "mode": "webhook", "status": "success", "startedAt": "2024-03-14T12:01:00.000Z", "stoppedAt": "2024-03-14T12:01:02.000Z", "workflowId": "wf_mock_001"}
+    ],
+    "nextCursor": null
+  },
+  "/api/v1/executions/1000": {
+    "id": 1000,
+    "finished": true,
+    "mode": "manual",
+    "status": "success",
+    "startedAt": "2024-03-14T12:00:00.000Z",
+    "stoppedAt": "2024-03-14T12:00:05.000Z",
+    "workflowId": "wf_mock_001"
+  },
+  "/api/v1/credentials": {
+    "data": [
+      {"id": "cred_mock_001", "name": "Slack API", "type": "slackApi", "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z", "shared": []},
+      {"id": "cred_mock_002", "name": "GitHub Token", "type": "githubApi", "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z", "shared": []}
+    ],
+    "nextCursor": null
+  },
+  "/api/v1/users": {
+    "data": [
+      {"id": "usr_mock_001", "email": "admin@verifiabl.dev", "firstName": "Admin", "lastName": "User", "role": "global:owner", "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"},
+      {"id": "usr_mock_002", "email": "member@verifiabl.dev", "firstName": "Member", "lastName": "User", "role": "global:member", "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"}
+    ],
+    "nextCursor": null
+  },
+  "/api/v1/projects": {
+    "data": [
+      {"id": "proj_mock_001", "name": "Default", "type": "personal", "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"}
+    ],
+    "nextCursor": null
+  },
+  "/api/v1/tags": {
+    "data": [
+      {"id": "tag_mock_001", "name": "production", "createdAt": "2024-03-14T12:00:00.000Z"},
+      {"id": "tag_mock_002", "name": "staging", "createdAt": "2024-03-14T12:00:00.000Z"}
+    ],
+    "nextCursor": null
+  }
+}

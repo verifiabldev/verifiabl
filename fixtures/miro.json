@@ -1,0 +1,24 @@
+{
+  "boards": [
+    {
+      "id": "uXjV_mock_001",
+      "name": "Mock Board",
+      "description": "Sample board description",
+      "type": "board"
+    },
+    {
+      "id": "uXjV_mock_002",
+      "name": "Second Board",
+      "description": "",
+      "type": "board"
+    }
+  ],
+  "sticky_notes": [
+    {
+      "id": "3458764517517819001",
+      "type": "sticky_note",
+      "data": { "content": "Mock sticky content" },
+      "style": { "fillColor": "light_yellow" }
+    }
+  ]
+}

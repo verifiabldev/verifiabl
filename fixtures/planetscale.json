@@ -1,0 +1,117 @@
+{
+  "/v1/organizations": {
+    "current_page": 1,
+    "next_page": null,
+    "next_page_url": null,
+    "prev_page": null,
+    "prev_page_url": null,
+    "data": [
+      {
+        "id": "org_mock_001",
+        "name": "mock_org",
+        "billing_email": "billing@mock.org",
+        "created_at": "2023-03-29T16:32:59Z",
+        "updated_at": "2026-03-14T12:00:00Z",
+        "plan": "scaling",
+        "valid_billing_info": true,
+        "sso": false,
+        "sso_directory": false,
+        "single_tenancy": false,
+        "managed_tenancy": false,
+        "has_past_due_invoices": false,
+        "database_count": 2,
+        "sso_portal_url": "",
+        "features": {},
+        "idp_managed_roles": false,
+        "invoice_budget_amount": "0",
+        "keyspace_shard_limit": 1,
+        "has_card": true,
+        "payment_info_required": false
+      },
+      {
+        "id": "org_mock_002",
+        "name": "other_org",
+        "billing_email": "billing@other.org",
+        "created_at": "2024-01-15T10:00:00Z",
+        "updated_at": "2026-03-14T12:00:00Z",
+        "plan": "hobby",
+        "valid_billing_info": true,
+        "sso": false,
+        "sso_directory": false,
+        "single_tenancy": false,
+        "managed_tenancy": false,
+        "has_past_due_invoices": false,
+        "database_count": 1,
+        "sso_portal_url": "",
+        "features": {},
+        "idp_managed_roles": false,
+        "invoice_budget_amount": "0",
+        "keyspace_shard_limit": 1,
+        "has_card": false,
+        "payment_info_required": false
+      }
+    ]
+  },
+  "/v1/organizations/mock_org/databases": {
+    "current_page": 1,
+    "next_page": null,
+    "next_page_url": null,
+    "prev_page": null,
+    "prev_page_url": null,
+    "data": [
+      {
+        "id": "db_mock_001",
+        "url": "https://api.planetscale.com/v1/organizations/mock_org/databases/app-db",
+        "branches_url": "https://api.planetscale.com/v1/organizations/mock_org/databases/app-db/branches",
+        "branches_count": 2,
+        "open_schema_recommendations_count": 0,
+        "development_branches_count": 1,
+        "production_branches_count": 1,
+        "issues_count": 0,
+        "multiple_admins_required_for_deletion": false,
+        "ready": true,
+        "at_backup_restore_branches_limit": false,
+        "at_development_branch_usage_limit": false
+      }
+    ]
+  },
+  "/v1/organizations/mock_org/databases/app-db/branches": {
+    "current_page": 1,
+    "next_page": null,
+    "next_page_url": null,
+    "prev_page": null,
+    "prev_page_url": null,
+    "data": [
+      {
+        "id": "branch_mock_main",
+        "name": "main",
+        "created_at": "2023-03-29T16:32:59Z",
+        "updated_at": "2026-03-14T12:00:00Z",
+        "production": true,
+        "state": "ready",
+        "ready": true
+      },
+      {
+        "id": "branch_mock_dev",
+        "name": "develop",
+        "created_at": "2024-06-01T08:00:00Z",
+        "updated_at": "2026-03-14T12:00:00Z",
+        "production": false,
+        "state": "ready",
+        "ready": true
+      }
+    ]
+  },
+  "/v1/organizations/mock_org/databases/app-db/branches/main/schema": {
+    "tables": [
+      {
+        "name": "users",
+        "schema": "CREATE TABLE `users` (\n  `id` bigint NOT NULL AUTO_INCREMENT,\n  `email` varchar(255),\n  PRIMARY KEY (`id`)\n);"
+      },
+      {
+        "name": "posts",
+        "schema": "CREATE TABLE `posts` (\n  `id` bigint NOT NULL AUTO_INCREMENT,\n  `user_id` bigint,\n  `title` varchar(255),\n  PRIMARY KEY (`id`)\n);"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "/api/rest/v6/baseUris": {"api_access_point": "https://api.na1.adobesign.com", "web_access_point": "https://secure.na1.adobesign.com"},
+  "/api/rest/v6/users/me": {"id": "mock_user", "email": "mock@verifiabl.dev", "status": "ACTIVE"},
+  "/api/rest/v6/agreements": {"userAgreementList": [{"agreementId": "agr_mock_001", "name": "Mock Agreement", "status": "SIGNED", "displayDate": "2018-07-23T08:13:16Z"}, {"agreementId": "agr_mock_002", "name": "Mock Draft", "status": "OUT_FOR_SIGNATURE", "displayDate": "2018-07-24T09:00:00Z"}], "page": {"nextCursor": "qJXXj2UAUX1X9rTSqoUOlkhsdo"}},
+  "/api/rest/v6/agreements/agr_mock_001": {"id": "agr_mock_001", "name": "Mock Agreement", "status": "SIGNED", "createdDate": "2018-07-23T08:13:16Z", "signatureType": "ESIGN", "senderEmail": "sender@verifiabl.dev"},
+  "/api/rest/v6/libraryDocuments": {"libraryDocumentList": [{"id": "lib_mock_001", "name": "Template NDA", "scope": "SHARED"}, {"id": "lib_mock_002", "name": "Template SOW", "scope": "SHARED"}]}
+}

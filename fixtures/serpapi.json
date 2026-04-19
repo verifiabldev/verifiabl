@@ -1,0 +1,36 @@
+{
+  "/search": {
+    "search_metadata": {
+      "id": "serp_mock_verifiabl_001",
+      "status": "Success",
+      "created_at": "2026-03-14 12:00:00 UTC",
+      "processed_at": "2026-03-14 12:00:00 UTC",
+      "total_time_taken": 1.0
+    },
+    "search_parameters": { "engine": "google", "q": "coffee", "device": "desktop" },
+    "search_information": {
+      "organic_results_state": "Results for exact spelling",
+      "query_displayed": "coffee",
+      "total_results": 1340000000
+    },
+    "organic_results": [
+      { "position": 1, "title": "Coffee - Wikipedia", "link": "https://en.wikipedia.org/wiki/Coffee", "snippet": "Coffee is a brewed drink..." },
+      { "position": 2, "title": "Coffee Recipes", "link": "https://verifiabl.dev/coffee", "snippet": "Best coffee recipes." }
+    ]
+  },
+  "/locations.json": [
+    { "id": "585069b8ee19ad271e9ba949", "name": "Austin", "canonical_name": "Austin,Texas,United States", "country_code": "US", "target_type": "City", "reach": 4870000, "gps": [-97.7430608, 30.267153] },
+    { "id": "585069bdee19ad271e9bc072", "name": "Austin, TX", "canonical_name": "Austin, TX,Texas,United States", "country_code": "US", "target_type": "DMA Region", "reach": 5560000, "gps": [-97.7430608, 30.267153] }
+  ],
+  "/account.json": {
+    "account_id": "serp_mock_account_001",
+    "account_email": "demo@serpapi.com",
+    "plan_id": "bigdata",
+    "plan_name": "Big Data Plan",
+    "searches_per_month": 30000,
+    "plan_searches_left": 5958,
+    "this_month_usage": 24042,
+    "last_hour_searches": 42,
+    "account_rate_limit_per_hour": 6000
+  }
+}

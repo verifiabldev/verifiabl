@@ -1,0 +1,13 @@
+{
+  "/api/v1/users": [
+    {"id": "usr_mock_verifiabl", "status": "ACTIVE", "created": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "profile": {"firstName": "Mock", "lastName": "User", "email": "mock@verifiabl.dev", "login": "mock@verifiabl.dev"}},
+    {"id": "usr_mock_002", "status": "ACTIVE", "created": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "profile": {"firstName": "Alice", "lastName": "Verifiabl", "email": "alice@verifiabl.dev", "login": "alice@verifiabl.dev"}}
+  ],
+  "/api/v1/users/usr_mock_verifiabl": {"id": "usr_mock_verifiabl", "status": "ACTIVE", "created": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "profile": {"firstName": "Mock", "lastName": "User", "email": "mock@verifiabl.dev", "login": "mock@verifiabl.dev"}},
+  "/api/v1/apps": [
+    {"id": "0oa_mock_verifiabl", "name": "oidc_client", "label": "Mock OIDC App", "status": "ACTIVE", "signOnMode": "OPENID_CONNECT"},
+    {"id": "0oa_mock_002", "name": "saml_app", "label": "Mock SAML App", "status": "ACTIVE", "signOnMode": "SAML_2_0"}
+  ],
+  "/api/v1/apps/0oa_mock_verifiabl": {"id": "0oa_mock_verifiabl", "name": "oidc_client", "label": "Mock OIDC App", "status": "ACTIVE", "signOnMode": "OPENID_CONNECT"},
+  "/api/v1/apps/0oa_mock_verifiabl/users": [{"id": "usr_mock_001", "scope": "USER", "credentials": {"userName": "mock@verifiabl.dev"}, "profile": {"firstName": "Mock", "lastName": "User", "email": "mock@verifiabl.dev", "login": "mock@verifiabl.dev"}}]
+}

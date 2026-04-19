@@ -1,0 +1,18 @@
+{
+  "/api/v1/organizations": [
+    {"id": "org_mock_001", "name": "Mock Organization", "url": "https://dashboard.meraki.com/o/abc/manage/overview", "api": {"enabled": true}, "licensing": {"model": "co-term"}, "cloud": {"region": {"name": "North America", "host": {"name": "United States"}}}, "management": {"details": []}},
+    {"id": "org_mock_002", "name": "Second Org", "url": "https://dashboard.meraki.com/o/def/manage/overview", "api": {"enabled": true}, "licensing": {"model": "per-device"}, "cloud": {"region": {"name": "North America", "host": {"name": "United States"}}}, "management": {"details": []}}
+  ],
+  "/api/v1/organizations/org_mock_001/networks": [
+    {"id": "N_mock_001", "organizationId": "org_mock_001", "name": "Main Office", "productTypes": ["appliance", "switch", "wireless"], "timeZone": "America/Los_Angeles", "tags": [], "url": "https://n1.meraki.com/n/N_mock_001/manage/nodes/list", "notes": "", "isBoundToConfigTemplate": false},
+    {"id": "N_mock_002", "organizationId": "org_mock_001", "name": "Branch", "productTypes": ["wireless"], "timeZone": "America/New_York", "tags": [], "url": "https://n1.meraki.com/n/N_mock_002/manage/nodes/list", "notes": "", "isBoundToConfigTemplate": false}
+  ],
+  "/api/v1/organizations/org_mock_001/devices": [
+    {"serial": "QBSB-VQ3J-XZ54", "mac": "00:11:22:33:44:55", "name": "MX64-Mock", "model": "MX64", "networkId": "N_mock_001", "firmware": "wireless", "lanIp": "192.168.1.1"},
+    {"serial": "ABCD-EF12-GH34", "mac": "00:11:22:33:44:66", "name": "MR33-Mock", "model": "MR33", "networkId": "N_mock_001", "firmware": "wireless", "lanIp": "192.168.1.2"}
+  ],
+  "/api/v1/networks/N_mock_001/devices": [
+    {"serial": "QBSB-VQ3J-XZ54", "mac": "00:11:22:33:44:55", "name": "MX64-Mock", "model": "MX64", "networkId": "N_mock_001", "firmware": "wireless", "lanIp": "192.168.1.1"},
+    {"serial": "ABCD-EF12-GH34", "mac": "00:11:22:33:44:66", "name": "MR33-Mock", "model": "MR33", "networkId": "N_mock_001", "firmware": "wireless", "lanIp": "192.168.1.2"}
+  ]
+}

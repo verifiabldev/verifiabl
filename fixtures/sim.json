@@ -1,0 +1,40 @@
+{
+  "/api/v1/workflows": {
+    "data": [
+      {"id": "wf_mock_verifiabl_1", "name": "Support Agent", "description": "Routes tickets", "color": "#33c482", "folderId": "folder_mock_1", "workspaceId": "ws_mock_1", "isDeployed": true, "deployedAt": "2025-06-15T10:30:00Z", "runCount": 142, "lastRunAt": "2025-06-20T14:15:22Z", "createdAt": "2025-01-10T09:00:00Z", "updatedAt": "2025-06-18T16:45:00Z"},
+      {"id": "wf_mock_verifiabl_2", "name": "Data Pipeline", "description": "ETL workflow", "color": "#4a90d9", "folderId": "folder_mock_1", "workspaceId": "ws_mock_1", "isDeployed": true, "deployedAt": "2025-06-14T08:00:00Z", "runCount": 56, "lastRunAt": "2025-06-19T09:00:00Z", "createdAt": "2025-02-01T09:00:00Z", "updatedAt": "2025-06-17T12:00:00Z"}
+    ],
+    "nextCursor": null,
+    "limits": {"workflowExecutionRateLimit": {"sync": {"requestsPerMinute": 60, "maxBurst": 10, "remaining": 59, "resetAt": "2025-06-20T14:16:00Z"}, "async": {"requestsPerMinute": 30, "maxBurst": 5, "remaining": 30, "resetAt": "2025-06-20T14:16:00Z"}}, "usage": {"currentPeriodCost": 1.25, "limit": 50, "plan": "pro", "isExceeded": false}}
+  },
+  "/api/v1/workflows/wf_mock_verifiabl_1": {
+    "data": {"id": "wf_mock_verifiabl_1", "name": "Support Agent", "description": "Routes incoming support tickets and drafts responses", "color": "#33c482", "folderId": "folder_mock_1", "workspaceId": "ws_mock_1", "isDeployed": true, "deployedAt": "2025-06-15T10:30:00Z", "runCount": 142, "lastRunAt": "2025-06-20T14:15:22Z", "variables": {}, "inputs": {"fields": {}}, "createdAt": "2025-01-10T09:00:00Z", "updatedAt": "2025-06-18T16:45:00Z"},
+    "limits": {"workflowExecutionRateLimit": {"sync": {"requestsPerMinute": 60, "maxBurst": 10, "remaining": 59, "resetAt": "2025-06-20T14:16:00Z"}, "async": {"requestsPerMinute": 30, "maxBurst": 5, "remaining": 30, "resetAt": "2025-06-20T14:16:00Z"}}, "usage": {"currentPeriodCost": 1.25, "limit": 50, "plan": "pro", "isExceeded": false}}
+  },
+  "/api/jobs/job_mock_verifiabl": {
+    "success": true,
+    "taskId": "job_mock_verifiabl",
+    "status": "completed",
+    "metadata": {"startedAt": "2025-06-20T14:15:22Z", "completedAt": "2025-06-20T14:15:23Z", "duration": 1250},
+    "output": {"result": "Hello, world!"},
+    "error": null,
+    "estimatedDuration": 2000
+  },
+  "/api/v1/logs": {
+    "data": [
+      {"id": "log_mock_001", "workflowId": "wf_mock_verifiabl_1", "executionId": "exec_mock_001", "level": "info", "trigger": "api", "startedAt": "2025-01-01T12:34:56.789Z", "endedAt": "2025-01-01T12:34:57.123Z", "totalDurationMs": 334, "cost": {"total": 0.00234}, "files": null},
+      {"id": "log_mock_002", "workflowId": "wf_mock_verifiabl_1", "executionId": "exec_mock_002", "level": "info", "trigger": "api", "startedAt": "2025-01-01T12:35:00.000Z", "endedAt": "2025-01-01T12:35:00.500Z", "totalDurationMs": 500, "cost": {"total": 0.00112}, "files": null}
+    ],
+    "nextCursor": null,
+    "limits": {"workflowExecutionRateLimit": {"sync": {"requestsPerMinute": 60, "maxBurst": 10, "remaining": 59, "resetAt": "2025-06-20T14:16:00Z"}, "async": {"requestsPerMinute": 30, "maxBurst": 5, "remaining": 30, "resetAt": "2025-06-20T14:16:00Z"}}, "usage": {"currentPeriodCost": 1.25, "limit": 50, "plan": "pro", "isExceeded": false}}
+  },
+  "/api/v1/logs/log_mock_001": {
+    "data": {"id": "log_mock_001", "workflowId": "wf_mock_verifiabl_1", "executionId": "exec_mock_001", "level": "info", "trigger": "api", "startedAt": "2025-01-01T12:34:56.789Z", "endedAt": "2025-01-01T12:34:57.123Z", "totalDurationMs": 334, "workflow": {"id": "wf_mock_verifiabl_1", "name": "Support Agent", "description": "Routes tickets"}, "executionData": {"traceSpans": [], "finalOutput": {}}, "cost": {"total": 0.00234, "tokens": {"prompt": 123, "completion": 456, "total": 579}, "models": {"gpt-4o": {"input": 0.001, "output": 0.00134, "total": 0.00234, "tokens": {"prompt": 123, "completion": 456, "total": 579}}}}, "limits": {"workflowExecutionRateLimit": {"sync": {"requestsPerMinute": 60, "maxBurst": 10, "remaining": 59, "resetAt": "2025-06-20T14:16:00Z"}, "async": {"requestsPerMinute": 30, "maxBurst": 5, "remaining": 30, "resetAt": "2025-06-20T14:16:00Z"}}, "usage": {"currentPeriodCost": 1.25, "limit": 50, "plan": "pro", "isExceeded": false}}}
+  },
+  "/api/v1/logs/executions/exec_mock_001": {
+    "executionId": "exec_mock_001",
+    "workflowId": "wf_mock_verifiabl_1",
+    "workflowState": {"blocks": {}, "edges": [], "loops": {}, "parallels": {}},
+    "executionMetadata": {"trigger": "api", "startedAt": "2025-01-01T12:34:56.789Z", "endedAt": "2025-01-01T12:34:57.123Z", "totalDurationMs": 334, "cost": {"total": 0.00234}}
+  }
+}

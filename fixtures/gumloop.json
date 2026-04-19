@@ -1,0 +1,42 @@
+{
+  "/api/v1/list_saved_items": {
+    "saved_items": [
+      {"saved_item_id": "saved_mock_verifiabl_1", "name": "Support Triage", "description": "Routes tickets", "created_ts": "2024-01-15T10:00:00+00:00"},
+      {"saved_item_id": "saved_mock_verifiabl_2", "name": "Data Sync", "description": "Syncs warehouse", "created_ts": "2024-02-01T14:30:00+00:00"}
+    ]
+  },
+  "/api/v1/list_workbooks": {
+    "workbooks": [
+      {
+        "workbook_id": "wb_mock_verifiabl_1",
+        "name": "Support",
+        "description": "Support flows",
+        "created_ts": "2024-01-10T09:00:00+00:00",
+        "saved_items": [
+          {"saved_item_id": "saved_mock_verifiabl_1", "name": "Support Triage", "description": "Routes tickets", "created_ts": "2024-01-15T10:00:00+00:00"}
+        ]
+      }
+    ]
+  },
+  "/api/v1/get_inputs": {
+    "inputs": [
+      {"name": "recipient", "data_type": "string", "description": "Email recipient"},
+      {"name": "subject", "data_type": "string", "description": null}
+    ]
+  },
+  "/api/v1/get_pl_run": {
+    "created_ts": "2024-06-19T18:06:31.102786+00:00",
+    "finished_ts": "2024-06-19T18:06:32.500000+00:00",
+    "log": ["__system__: __STARTING__:Read files from GitHub"],
+    "outputs": {"result": "completed"},
+    "run_id": "run_mock_verifiabl_001",
+    "state": "DONE",
+    "user_id": "user_mock_verifiabl"
+  },
+  "/api/v1/get_plrun_saved_item_map": {
+    "saved_mock_verifiabl_1": [
+      {"run_id": "run_mock_verifiabl_001", "created_ts": "2024-06-19T18:06:31+00:00", "state": "DONE"},
+      {"run_id": "run_mock_verifiabl_002", "created_ts": "2024-06-18T12:00:00+00:00", "state": "DONE"}
+    ]
+  }
+}

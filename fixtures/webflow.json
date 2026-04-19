@@ -1,0 +1,23 @@
+{
+  "/v2/sites": {
+    "sites": [
+      {"id": "site_mock_001", "workspaceId": "ws_mock_001", "displayName": "Mock Site", "shortName": "mock-site", "createdOn": "2024-03-14T12:00:00.000Z", "lastPublished": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "previewUrl": "https://verifiabl.dev/preview.png", "timeZone": "America/Los_Angeles"},
+      {"id": "site_mock_002", "workspaceId": "ws_mock_001", "displayName": "Blog", "shortName": "blog", "createdOn": "2024-03-13T10:00:00.000Z", "lastPublished": "2024-03-13T10:00:00.000Z", "lastUpdated": "2024-03-13T10:00:00.000Z", "previewUrl": "https://verifiabl.dev/blog.png", "timeZone": "UTC"}
+    ]
+  },
+  "/v2/sites/site_mock_001": {"id": "site_mock_001", "workspaceId": "ws_mock_001", "displayName": "Mock Site", "shortName": "mock-site", "createdOn": "2024-03-14T12:00:00.000Z", "lastPublished": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "previewUrl": "https://verifiabl.dev/preview.png", "timeZone": "America/Los_Angeles"},
+  "/v2/sites/site_mock_001/collections": {
+    "collections": [
+      {"id": "col_mock_001", "displayName": "Blog Posts", "singularName": "Blog Post", "slug": "blog-posts", "createdOn": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z"},
+      {"id": "col_mock_002", "displayName": "Authors", "singularName": "Author", "slug": "authors", "createdOn": "2024-03-13T10:00:00.000Z", "lastUpdated": "2024-03-13T10:00:00.000Z"}
+    ]
+  },
+  "/v2/collections/col_mock_001": {"id": "col_mock_001", "displayName": "Blog Posts", "singularName": "Blog Post", "slug": "blog-posts", "createdOn": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "fields": [{"id": "field_mock_001", "displayName": "Name", "slug": "name", "type": "PlainText", "isRequired": true, "isEditable": true}, {"id": "field_mock_002", "displayName": "Body", "slug": "body", "type": "RichText", "isRequired": false, "isEditable": true}]},
+  "/v2/collections/col_mock_001/items": {
+    "items": [
+      {"id": "item_mock_001", "cmsLocaleId": "locale_mock", "lastPublished": "2024-03-14T12:00:00.000Z", "lastUpdated": "2024-03-14T12:00:00.000Z", "createdOn": "2024-03-14T12:00:00.000Z", "isArchived": false, "isDraft": false, "fieldData": {"name": "First Post", "slug": "first-post"}},
+      {"id": "item_mock_002", "cmsLocaleId": "locale_mock", "lastPublished": "2024-03-13T10:00:00.000Z", "lastUpdated": "2024-03-13T10:00:00.000Z", "createdOn": "2024-03-13T10:00:00.000Z", "isArchived": false, "isDraft": false, "fieldData": {"name": "Second Post", "slug": "second-post"}}
+    ],
+    "pagination": {"limit": 100, "offset": 0, "total": 2}
+  }
+}

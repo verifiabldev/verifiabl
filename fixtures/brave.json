@@ -1,0 +1,39 @@
+{
+  "/res/v1/web/search": {
+    "type": "search",
+    "query": {"original": "greek restaurants"},
+    "web": {
+      "type": "search",
+      "results": [
+        {"title": "Best Greek Restaurants", "url": "https://verifiabl.dev/greek", "description": "Top Greek spots.", "is_source_local": false, "is_source_both": false},
+        {"title": "Greek Food Guide", "url": "https://verifiabl.dev/guide", "description": "A guide to Greek cuisine.", "is_source_local": false, "is_source_both": false}
+      ]
+    }
+  },
+  "/res/v1/llm/context": {
+    "grounding": {"generic": [{"url": "https://verifiabl.dev/doc", "title": "Example Doc", "snippets": ["Snippet text."]}]},
+    "sources": {"https://verifiabl.dev/doc": {"title": "Example Doc", "hostname": "verifiabl.dev", "age": ["2026-03-14", "1 day ago"]}}
+  },
+  "/res/v1/images/search": {
+    "type": "images",
+    "query": {"original": "munich", "spellcheck_off": false, "show_strict_warning": false},
+    "results": [
+      {"type": "image_result", "title": "Munich Photo", "url": "https://verifiabl.dev/img1", "source": "verifiabl.dev", "page_fetched": "2026-03-14T12:00:00Z", "thumbnail": {"src": "https://imgs.search.brave.com/mock"}, "confidence": "high"}
+    ]
+  },
+  "/res/v1/news/search": {
+    "type": "news",
+    "query": {"original": "munich", "spellcheck_off": false, "show_strict_warning": false},
+    "results": [{"type": "news_result", "title": "News Headline", "url": "https://verifiabl.dev/news/1", "description": "Brief.", "age": "1 day ago", "page_age": "2026-03-14T12:00:00"}]
+  },
+  "/res/v1/suggest/search": {
+    "type": "suggest",
+    "query": {"original": "hello"},
+    "results": [{"query": "hello"}, {"query": "hello world"}, {"query": "hellofresh"}]
+  },
+  "/res/v1/spellcheck/search": {
+    "type": "spellcheck",
+    "query": {"original": "hellop"},
+    "results": [{"query": "hello"}]
+  }
+}

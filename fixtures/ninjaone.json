@@ -1,0 +1,56 @@
+{
+  "/v2/organizations": [
+    {"id": 1, "name": "Mock Organization", "description": null, "userData": {}, "nodeApprovalMode": "AUTOMATIC"},
+    {"id": 2, "name": "Second Org", "description": null, "userData": {}, "nodeApprovalMode": "AUTOMATIC"}
+  ],
+  "/v2/organization/1": {
+    "id": 1,
+    "name": "Mock Organization",
+    "description": null,
+    "userData": {},
+    "nodeApprovalMode": "AUTOMATIC",
+    "locations": [{"id": 1, "name": "Main Office", "address": "123 Main St", "description": null, "userData": {}}],
+    "policies": [{"nodeRoleId": 1, "policyId": 1}]
+  },
+  "/v2/organization/1/devices": [
+    {"id": 101, "uid": "550e8400-e29b-41d4-a716-446655440000", "organizationId": 1, "locationId": 1, "nodeClass": "WINDOWS_WORKSTATION", "displayName": "WORKSTATION-MOCK-01", "systemName": "WORKSTATION-MOCK-01", "approvalStatus": "APPROVED", "offline": false, "created": 1710400000.0, "lastContact": 1710400000.0, "tags": []},
+    {"id": 102, "uid": "550e8400-e29b-41d4-a716-446655440001", "organizationId": 1, "locationId": 1, "nodeClass": "WINDOWS_WORKSTATION", "displayName": "WORKSTATION-MOCK-02", "systemName": "WORKSTATION-MOCK-02", "approvalStatus": "APPROVED", "offline": false, "created": 1710400000.0, "lastContact": 1710400001.0, "tags": []}
+  ],
+  "/v2/devices": [
+    {"id": 101, "uid": "550e8400-e29b-41d4-a716-446655440000", "organizationId": 1, "locationId": 1, "nodeClass": "WINDOWS_WORKSTATION", "displayName": "WORKSTATION-MOCK-01", "systemName": "WORKSTATION-MOCK-01", "approvalStatus": "APPROVED", "offline": false, "created": 1710400000.0, "lastContact": 1710400000.0, "tags": []},
+    {"id": 102, "uid": "550e8400-e29b-41d4-a716-446655440001", "organizationId": 1, "locationId": 1, "nodeClass": "WINDOWS_WORKSTATION", "displayName": "WORKSTATION-MOCK-02", "systemName": "WORKSTATION-MOCK-02", "approvalStatus": "APPROVED", "offline": false, "created": 1710400000.0, "lastContact": 1710400001.0, "tags": []}
+  ],
+  "/v2/device/101": {
+    "id": 101,
+    "uid": "550e8400-e29b-41d4-a716-446655440000",
+    "organizationId": 1,
+    "locationId": 1,
+    "nodeClass": "WINDOWS_WORKSTATION",
+    "displayName": "WORKSTATION-MOCK-01",
+    "systemName": "WORKSTATION-MOCK-01",
+    "approvalStatus": "APPROVED",
+    "offline": false,
+    "created": 1710400000.0,
+    "lastContact": 1710400000.0,
+    "tags": []
+  },
+  "/v2/policies": [
+    {"id": 1, "name": "Default Policy", "description": "Default endpoint policy"},
+    {"id": 2, "name": "Workstation Policy", "description": "Workstation policy"}
+  ],
+  "/v2/alerts": [
+    {"uid": "alert_mock_001", "deviceId": 101, "conditionName": "High CPU", "severity": "warning", "triggeredAt": 1710400000.0}
+  ],
+  "/v2/activities": [
+    {"id": 1, "deviceId": 101, "activityType": "CHECK_IN", "timestamp": 1710400000.0},
+    {"id": 2, "deviceId": 102, "activityType": "CHECK_IN", "timestamp": 1710400001.0}
+  ],
+  "/v2/groups": [
+    {"id": 1, "name": "All Workstations", "description": "Saved search"},
+    {"id": 2, "name": "Servers", "description": "Server devices"}
+  ],
+  "/v2/locations": [
+    {"id": 1, "name": "Main Office", "address": "123 Main St", "organizationId": 1},
+    {"id": 2, "name": "Branch", "address": "456 Branch Ave", "organizationId": 1}
+  ]
+}

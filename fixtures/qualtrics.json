@@ -1,0 +1,40 @@
+{
+  "/API/v3/surveys": {
+    "result": {
+      "elements": [
+        {"id": "SV_mock_001", "name": "NPS Q1 2025", "ownerId": "owner_mock", "lastModified": "1710400000000", "creationDate": "1710300000000", "isActive": true},
+        {"id": "SV_mock_002", "name": "CSAT Survey", "ownerId": "owner_mock", "lastModified": "1710400000000", "creationDate": "1710200000000", "isActive": true}
+      ],
+      "nextPage": null
+    },
+    "meta": {"httpStatus": "200 - OK", "requestId": "mock_verifiabl_001"}
+  },
+  "/API/v3/survey-definitions/SV_mock_001": {
+    "result": {"id": "SV_mock_001", "name": "NPS Q1 2025", "questions": {}, "blocks": {}},
+    "meta": {"httpStatus": "200 - OK", "requestId": "mock_verifiabl_001"}
+  },
+  "/API/v3/distributions": {
+    "result": {
+      "elements": [
+        {"id": "EM_mock_001", "parentDistributionId": null, "ownerId": "owner_mock", "organizationId": "org_mock", "requestStatus": "Done", "requestType": "Invite", "sendDate": "1710400000000", "createdDate": "1710300000000", "modifiedDate": "1710400000000", "recipients": {"mailingListId": "ML_mock_001"}, "stats": {"sent": 50, "finished": 42}},
+        {"id": "EM_mock_002", "parentDistributionId": null, "ownerId": "owner_mock", "organizationId": "org_mock", "requestStatus": "Done", "requestType": "Invite", "sendDate": "1710350000000", "createdDate": "1710250000000", "modifiedDate": "1710350000000", "recipients": {"mailingListId": "ML_mock_002"}, "stats": {"sent": 30, "finished": 28}}
+      ],
+      "nextPage": null
+    },
+    "meta": {"httpStatus": "200 - OK", "requestId": "mock_verifiabl_001"}
+  },
+  "/API/v3/distributions/EM_mock_001/links": {
+    "result": {
+      "elements": [
+        {"contactId": "C_mock_001", "link": "https://fra1.qualtrics.com/jfe/form/SV_mock_001?Q_DL=link_mock_001", "firstName": "Alice", "lastName": "Test", "email": "alice@verifiabl.dev", "status": "Created", "linkExpiration": "2025-04-14T00:00:00Z", "unsubscribed": false},
+        {"contactId": "C_mock_002", "link": "https://fra1.qualtrics.com/jfe/form/SV_mock_001?Q_DL=link_mock_002", "firstName": "Bob", "lastName": "Test", "email": "bob@verifiabl.dev", "status": "Created", "linkExpiration": "2025-04-14T00:00:00Z", "unsubscribed": false}
+      ],
+      "nextPage": null
+    },
+    "meta": {"httpStatus": "200 - OK", "requestId": "mock_verifiabl_001"}
+  },
+  "/API/v3/eventsubscriptions/ES_mock_001": {
+    "result": {"id": "ES_mock_001", "topic": "surveyengine.completedResponse.SV_mock_001", "publicationUrl": "https://verifiabl.dev/webhook"},
+    "meta": {"httpStatus": "200 - OK", "requestId": "mock_verifiabl_001"}
+  }
+}

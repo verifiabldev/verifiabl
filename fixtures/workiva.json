@@ -1,0 +1,49 @@
+{
+  "/platform/v1/files": {
+    "data": [
+      {
+        "id": "file_mock_001",
+        "name": "2019 Supporting Documents",
+        "kind": "Folder",
+        "type": "Folder",
+        "container": "",
+        "created": {"dateTime": "2019-10-28T15:03:27Z"},
+        "modified": {"dateTime": "2019-10-28T15:03:27Z"},
+        "template": false
+      },
+      {
+        "id": "file_mock_002",
+        "name": "2019 Year-End Summary",
+        "kind": "Document",
+        "type": "10-K",
+        "container": "",
+        "created": {"dateTime": "2019-10-28T15:03:27Z"},
+        "modified": {"dateTime": "2019-10-29T13:15:27Z"},
+        "template": false
+      }
+    ]
+  },
+  "/platform/v1/files/file_mock_002": {
+    "id": "file_mock_002",
+    "name": "Year-end review",
+    "kind": "Document",
+    "type": "10-K",
+    "container": "",
+    "created": {"dateTime": "2019-10-28T15:03:27Z"},
+    "modified": {"dateTime": "2019-10-29T13:15:27Z"},
+    "template": false
+  },
+  "/platform/v1/documents": {
+    "data": [
+      {"id": "doc_mock_001", "name": "Example Company 10-K", "created": {"dateTime": "2019-10-28T15:03:27Z"}, "modified": {"dateTime": "2019-10-29T13:15:27Z"}, "template": false},
+      {"id": "doc_mock_002", "name": "2019 Year-End Summary", "created": {"dateTime": "2019-10-28T15:03:27Z"}, "modified": {"dateTime": "2019-10-29T13:15:27Z"}, "template": false}
+    ]
+  },
+  "/platform/v1/documents/doc_mock_001": {
+    "id": "doc_mock_001",
+    "name": "Example Company 10-K",
+    "created": {"dateTime": "2019-10-28T15:03:27Z"},
+    "modified": {"dateTime": "2019-10-29T13:15:27Z"},
+    "template": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "/v1/search": {
+    "results": {
+      "web": [
+        {"url": "https://verifiabl.dev/page1", "title": "Example Page 1", "description": "A sample result.", "snippets": ["Snippet one."], "favicon_url": "https://verifiabl.dev/favicon.ico"},
+        {"url": "https://verifiabl.dev/page2", "title": "Example Page 2", "description": "Another result.", "snippets": ["Snippet two."], "favicon_url": "https://verifiabl.dev/favicon.ico"}
+      ],
+      "news": []
+    },
+    "metadata": {"search_uuid": "you_mock_uuid_001", "query": "test query", "latency": 0.15}
+  },
+  "/search": {
+    "hits": [
+      {"url": "https://verifiabl.dev/hit1", "title": "Legacy Hit 1", "description": "Legacy result.", "snippets": ["Snippet."], "favicon_url": "https://verifiabl.dev/favicon.ico"}
+    ],
+    "latency": 0.12
+  },
+  "/v1/contents": [
+    {"url": "https://verifiabl.dev/doc", "title": "Mock Page", "html": "<p>Mock HTML</p>", "markdown": "Mock Markdown", "metadata": null}
+  ],
+  "/v1/research": {
+    "output": {
+      "content": "Mock research answer with [1] citation.",
+      "content_type": "text",
+      "sources": [{"url": "https://verifiabl.dev/source1", "title": "Source 1", "snippets": ["Relevant excerpt."]}]
+    }
+  },
+  "/images": {
+    "images": {"results": [{"title": "Mock Image", "page_url": "https://verifiabl.dev/img", "image_url": "https://verifiabl.dev/img/1.jpg"}]},
+    "metadata": {"query": "test", "search_uuid": "you_img_mock_001"}
+  },
+  "/livenews": {
+    "news": {
+      "query": {"original": "news query", "spellcheck_off": false},
+      "results": [
+        {"title": "Mock News Article", "url": "https://verifiabl.dev/news/1", "description": "Summary.", "source_name": "Mock News", "page_age": "2026-03-14T12:00:00Z", "age": "2 hours ago", "thumbnail": {"src": "https://verifiabl.dev/thumb.jpg"}}
+      ],
+      "metadata": {"request_uuid": "you_news_mock_001"}
+    }
+  }
+}

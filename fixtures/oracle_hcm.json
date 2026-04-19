@@ -1,0 +1,26 @@
+{
+  "/hcmRestApi/resources/11.13.18.05/organizations": {
+    "items": [
+      {"OrganizationId": "org_mock_001", "Name": "Engineering", "OrganizationCode": "ENG"},
+      {"OrganizationId": "org_mock_002", "Name": "Product", "OrganizationCode": "PROD"}
+    ],
+    "count": 2,
+    "totalResults": 2
+  },
+  "/hcmRestApi/resources/11.13.18.05/locations": {
+    "items": [
+      {"LocationId": "loc_mock_001", "Name": "HQ", "LocationCode": "HQ"},
+      {"LocationId": "loc_mock_002", "Name": "Remote", "LocationCode": "REM"}
+    ],
+    "count": 2,
+    "totalResults": 2
+  },
+  "/hcmRestApi/resources/11.13.18.05/publicWorkers": {
+    "items": [
+      {"PersonId": "person_mock_001", "DisplayName": "Jane Doe", "PersonNumber": "EMP001"},
+      {"PersonId": "person_mock_002", "DisplayName": "John Smith", "PersonNumber": "EMP002"}
+    ],
+    "count": 2,
+    "totalResults": 2
+  }
+}

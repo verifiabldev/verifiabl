@@ -1,0 +1,15 @@
+{
+  "/api/v1/models": {
+    "data": [
+      {"id": "openai/gpt-4o-mini", "name": "GPT-4o mini", "context_length": 128000},
+      {"id": "anthropic/claude-3.5-sonnet", "name": "Claude 3.5 Sonnet", "context_length": 200000}
+    ]
+  },
+  "/api/v1/models/count": {"data": 250},
+  "/api/v1/generation": {
+    "id": "gen_mock_verifiabl",
+    "model": "openai/gpt-4o-mini",
+    "usage": {"prompt_tokens": 10, "completion_tokens": 4, "total_tokens": 14},
+    "cost": 0.00014
+  }
+}

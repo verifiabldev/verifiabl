@@ -1,0 +1,11 @@
+{
+  "/G2M/rest/organizers": [
+    {"lastName": "Verifiabl", "groupId": 1, "groupName": "Default", "status": "active", "organizerKey": 9001, "organizerkey": 9001, "email": "organizer@verifiabl.dev", "firstName": "Mock", "products": ["G2M"], "maxNumAttendeesAllowed": 25}
+  ],
+  "/G2M/rest/meetings": [
+    {"startTime": "2025-04-01T18:00:00.+0000", "endTime": "2025-04-01T19:00:00.+0000", "createTime": "", "meetingid": 123456789, "maxParticipants": 25, "passwordRequired": "false", "status": "ACTIVE", "subject": "Mock sync", "meetingType": "scheduled", "uniqueMeetingId": 123456789, "conferenceCallInfo": "Hybrid"}
+  ],
+  "/G2M/rest/groups": [
+    {"groupkey": 1, "groupName": "Default", "parentKey": 1, "status": "active", "numOrganizers": 2}
+  ]
+}

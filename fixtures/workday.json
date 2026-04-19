@@ -1,0 +1,37 @@
+{
+  "ccx/service/wd1/Human_Resources/v42.1/Workers": {
+    "Response_Results": {"Total_Results": 2, "Total_Pages": 1, "Page": 1},
+    "Response_Data": {
+      "Worker": [
+        {"Worker_Descriptor": "Jane Doe", "Employee_ID": "emp_mock_001", "Worker_Type": "Employee"},
+        {"Worker_Descriptor": "John Smith", "Employee_ID": "emp_mock_002", "Worker_Type": "Employee"}
+      ]
+    }
+  },
+  "ccx/service/wd1/Human_Resources/v42.1/Workers/emp_mock_001": {
+    "Worker_Descriptor": "Jane Doe",
+    "Employee_ID": "emp_mock_001",
+    "Worker_Type": "Employee",
+    "Legal_Name": {"Descriptor": "Jane Doe"},
+    "Primary_Work_Email": "jane.doe@verifiabl.dev",
+    "Worker_Status": "Active"
+  },
+  "ccx/service/wd1/Human_Resources/v42.1/Get_Employees": {
+    "Response_Results": {"Total_Results": 2, "Total_Pages": 1, "Page": 1},
+    "Response_Data": {
+      "Employee": [
+        {"Descriptor": "Jane Doe", "ID": "emp_mock_001"},
+        {"Descriptor": "John Smith", "ID": "emp_mock_002"}
+      ]
+    }
+  },
+  "ccx/service/wd1/Recruiting/v42.0/Get_Job_Postings": {
+    "Response_Results": {"Total_Results": 2, "Total_Pages": 1, "Page": 1},
+    "Response_Data": {
+      "Job_Posting": [
+        {"Descriptor": "Software Engineer - Backend", "ID": "post_mock_001", "Status": "Posted"},
+        {"Descriptor": "Product Manager", "ID": "post_mock_002", "Status": "Posted"}
+      ]
+    }
+  }
+}

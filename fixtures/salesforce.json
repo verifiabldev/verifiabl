@@ -1,0 +1,5 @@
+{
+  "/services/data/v59.0/sobjects": {"sobjects": [{"name": "Account", "label": "Account", "custom": false}, {"name": "Contact", "label": "Contact", "custom": false}, {"name": "Opportunity", "label": "Opportunity", "custom": false}]},
+  "/services/data/v59.0/query": {"totalSize": 2, "done": true, "records": [{"attributes": {"type": "Account"}, "Id": "001_mock_001", "Name": "Acme"}, {"attributes": {"type": "Account"}, "Id": "001_mock_002", "Name": "Globex"}]},
+  "/services/data/v59.0/limits": {"DailyApiRequests": {"Max": 15000, "Remaining": 14900}, "DailyBulkApiRequests": {"Max": 10000, "Remaining": 10000}}
+}

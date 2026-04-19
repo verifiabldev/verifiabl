@@ -1,0 +1,42 @@
+{
+  "/v3/site-explorer/domain-rating": {
+    "domain_rating": 72.0,
+    "ahrefs_rank": 125000,
+    "ref_domains": 1842,
+    "target": "ahrefs.com"
+  },
+  "/v3/site-explorer/backlinks-stats": {
+    "backlinks": 45200,
+    "ref_domains": 1842,
+    "ref_ips": 1200,
+    "target": "ahrefs.com"
+  },
+  "/v3/site-explorer/all-backlinks": {
+    "backlinks": [
+      {"url_from": "https://verifiabl.dev/page1", "url_to": "https://ahrefs.com/blog", "url_rating_from": 45, "domain_rating_from": 62},
+      {"url_from": "https://other.com/post", "url_to": "https://ahrefs.com/docs", "url_rating_from": 38, "domain_rating_from": 55}
+    ],
+    "rows_used": 1
+  },
+  "/v3/site-explorer/metrics-overview": {
+    "domain_rating": 72.0,
+    "organic_traffic": 1250000,
+    "organic_keywords": 4200,
+    "target": "ahrefs.com"
+  },
+  "/v3/keywords-explorer/overview": {
+    "keywords": [
+      {"keyword": "ahrefs", "volume": 135000, "traffic_potential": 82000, "difficulty": 72},
+      {"keyword": "seo tools", "volume": 90000, "traffic_potential": 45000, "difficulty": 85}
+    ],
+    "rows_used": 1
+  },
+  "/v3/serp-overview/serp-overview": {
+    "serp_results": [
+      {"position": 1, "url": "https://ahrefs.com", "title": "Ahrefs - SEO Tool", "domain_rating": 72},
+      {"position": 2, "url": "https://competitor.com", "title": "Competitor SEO", "domain_rating": 68}
+    ],
+    "keyword": "ahrefs",
+    "country": "us"
+  }
+}

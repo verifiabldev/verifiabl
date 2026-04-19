@@ -1,0 +1,43 @@
+{
+  "/emails": {
+    "object": "list",
+    "has_more": false,
+    "data": [
+      {"object": "email", "id": "email_mock_001", "to": ["delivered@verifiabl.dev"], "from": "onboarding@verifiabl.dev", "subject": "Hello World", "created_at": "2023-04-03T22:13:42.674981+00:00", "last_event": "delivered"},
+      {"object": "email", "id": "email_mock_002", "to": ["recipient@verifiabl.dev"], "from": "onboarding@verifiabl.dev", "subject": "Welcome", "created_at": "2023-04-03T22:14:00.000000+00:00", "last_event": "delivered"}
+    ]
+  },
+  "/emails/email_mock_001": {
+    "object": "email",
+    "id": "email_mock_001",
+    "to": ["delivered@verifiabl.dev"],
+    "from": "onboarding@verifiabl.dev",
+    "subject": "Hello World",
+    "created_at": "2023-04-03T22:13:42.674981+00:00",
+    "last_event": "delivered"
+  },
+  "/domains": {
+    "object": "list",
+    "has_more": false,
+    "data": [
+      {"id": "domain_mock_001", "name": "verifiabl.dev", "status": "verified", "created_at": "2023-04-26T20:21:26.347412+00:00", "region": "us-east-1"},
+      {"id": "domain_mock_002", "name": "app.verifiabl.dev", "status": "pending", "created_at": "2023-04-26T20:22:00.000000+00:00", "region": "us-east-1"}
+    ]
+  },
+  "/domains/domain_mock_001": {
+    "object": "domain",
+    "id": "domain_mock_001",
+    "name": "verifiabl.dev",
+    "status": "verified",
+    "created_at": "2023-04-26T20:21:26.347412+00:00",
+    "region": "us-east-1"
+  },
+  "/api-keys": {
+    "object": "list",
+    "has_more": false,
+    "data": [
+      {"id": "key_mock_001", "name": "Production", "created_at": "2023-04-26T20:21:26.347412+00:00"},
+      {"id": "key_mock_002", "name": "Development", "created_at": "2023-04-26T20:22:00.000000+00:00"}
+    ]
+  }
+}

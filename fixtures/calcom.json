@@ -1,0 +1,85 @@
+{
+  "/v2/me": {
+    "status": "success",
+    "data": {
+      "id": 1,
+      "username": "mockuser",
+      "email": "mock@verifiabl.dev",
+      "name": "Mock User",
+      "avatarUrl": null,
+      "bio": null,
+      "timeFormat": 12,
+      "defaultScheduleId": 1,
+      "weekStart": "Sunday",
+      "timeZone": "America/Los_Angeles",
+      "organizationId": null,
+      "organization": null
+    }
+  },
+  "/v2/bookings": {
+    "status": "success",
+    "data": [
+      {
+        "id": 101,
+        "uid": "bkg_mock_001",
+        "title": "Consultation",
+        "description": "",
+        "hosts": [{"id": 1, "name": "Host", "email": "host@verifiabl.dev", "isFixed": true}],
+        "status": "accepted",
+        "start": "2024-08-13T15:30:00Z",
+        "end": "2024-08-13T16:30:00Z",
+        "duration": 60,
+        "eventTypeId": 50,
+        "eventType": {"id": 50, "title": "30 Min", "slug": "30min", "length": 30},
+        "location": "https://meet.verifiabl.dev/abc",
+        "absentHost": false,
+        "createdAt": "2024-08-13T15:00:00Z",
+        "updatedAt": "2024-08-13T15:00:00Z",
+        "attendees": [{"email": "attendee@verifiabl.dev", "name": "Attendee", "timeZone": "America/Los_Angeles"}],
+        "bookingFieldsResponses": {}
+      },
+      {
+        "id": 102,
+        "uid": "bkg_mock_002",
+        "title": "Demo",
+        "description": "",
+        "hosts": [{"id": 1, "name": "Host", "email": "host@verifiabl.dev", "isFixed": true}],
+        "status": "accepted",
+        "start": "2024-08-14T10:00:00Z",
+        "end": "2024-08-14T11:00:00Z",
+        "duration": 60,
+        "eventTypeId": 51,
+        "eventType": {"id": 51, "title": "60 Min", "slug": "60min", "length": 60},
+        "location": "https://meet.verifiabl.dev/def",
+        "absentHost": false,
+        "createdAt": "2024-08-14T09:00:00Z",
+        "updatedAt": "2024-08-14T09:00:00Z",
+        "attendees": [],
+        "bookingFieldsResponses": {}
+      }
+    ],
+    "pagination": {"total": 2, "take": 100, "skip": 0}
+  },
+  "/v2/event-types": {
+    "status": "success",
+    "data": [
+      {"id": 50, "title": "30 Min", "slug": "30min", "length": 30, "hidden": false},
+      {"id": 51, "title": "60 Min", "slug": "60min", "length": 60, "hidden": false}
+    ],
+    "pagination": {"total": 2, "take": 100, "skip": 0}
+  },
+  "/v2/calendars": {
+    "status": "success",
+    "data": [
+      {"credentialId": 1, "externalId": "primary", "integration": "google_calendar", "primary": true},
+      {"credentialId": 2, "externalId": "secondary", "integration": "google_calendar", "primary": false}
+    ]
+  },
+  "/v2/schedules": {
+    "status": "success",
+    "data": [
+      {"id": 1, "name": "Working Hours", "timeZone": "America/Los_Angeles", "isDefault": true},
+      {"id": 2, "name": "Weekends", "timeZone": "America/Los_Angeles", "isDefault": false}
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "models": [
+    {"id": "verifiabl/mock-model-a", "modelId": "verifiabl/mock-model-a", "author": "verifiabl", "downloads": 1000, "likes": 42, "private": false, "tags": ["text-generation"], "pipeline_tag": "text-generation", "createdAt": "2024-03-14T12:00:00.000Z"},
+    {"id": "verifiabl/mock-model-b", "modelId": "verifiabl/mock-model-b", "author": "verifiabl", "downloads": 500, "likes": 10, "private": false, "tags": ["sentence-similarity"], "pipeline_tag": "sentence-similarity", "createdAt": "2024-03-14T12:00:00.000Z"}
+  ],
+  "datasets": [
+    {"id": "verifiabl/mock-dataset-a", "author": "verifiabl", "downloads": 200, "likes": 5, "private": false, "lastModified": "2024-03-14T12:00:00.000Z"},
+    {"id": "verifiabl/mock-dataset-b", "author": "verifiabl", "downloads": 100, "likes": 2, "private": false, "lastModified": "2024-03-14T12:00:00.000Z"}
+  ]
+}

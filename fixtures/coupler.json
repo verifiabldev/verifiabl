@@ -1,0 +1,13 @@
+{
+  "importers": [
+    {"id": "imp_mock_001", "name": "Sales to Sheets", "source_type": "salesforce", "destination_type": "google_sheets", "status": "active", "created_at": 1710400000},
+    {"id": "imp_mock_002", "name": "HubSpot Export", "source_type": "hubspot", "destination_type": "google_sheets", "status": "active", "created_at": 1710400100}
+  ],
+  "runs": [
+    {"id": "run_mock_001", "importer_id": "imp_mock_001", "status": "completed", "started_at": 1710400000, "finished_at": 1710400120, "rows_imported": 150},
+    {"id": "run_mock_002", "importer_id": "imp_mock_001", "status": "completed", "started_at": 1710396400, "finished_at": 1710396520, "rows_imported": 148}
+  ],
+  "webhooks": [
+    {"id": "wh_mock_001", "url": "https://verifiabl.dev/coupler", "events": ["run.completed"], "active": true, "created_at": 1710400000}
+  ]
+}

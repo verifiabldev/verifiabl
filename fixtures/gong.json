@@ -1,0 +1,38 @@
+{
+  "/v2/calls": {
+    "calls": [
+      {"id": 1001, "duration": 3600, "parties": [{"emailAddress": "alice@verifiabl.dev", "name": "Alice"}, {"emailAddress": "bob@verifiabl.dev", "name": "Bob"}]},
+      {"id": 1002, "duration": 1800, "parties": [{"emailAddress": "alice@verifiabl.dev", "name": "Alice"}, {"emailAddress": "carol@verifiabl.dev", "name": "Carol"}]}
+    ]
+  },
+  "/v2/users": {
+    "users": [
+      {"id": 2001, "emailAddress": "alice@verifiabl.dev", "firstName": "Alice", "lastName": "Smith"},
+      {"id": 2002, "emailAddress": "bob@verifiabl.dev", "firstName": "Bob", "lastName": "Jones"}
+    ],
+    "records": {"totalRecords": 2, "currentPageSize": 2, "currentPageNumber": 0, "cursor": null}
+  },
+  "/v2/crm/integrations": {
+    "integrations": [
+      {"id": "crm_int_mock_001", "type": "salesforce", "status": "active"}
+    ]
+  },
+  "/v2/library/folder/content": {
+    "calls": [
+      {"id": 1001, "duration": 3600, "title": "Q1 review"},
+      {"id": 1002, "duration": 1800, "title": "Discovery"}
+    ]
+  },
+  "/v2/flows": {
+    "flows": [
+      {"id": 3001, "name": "Outbound sequence", "visibility": "company"},
+      {"id": 3002, "name": "Follow-up", "visibility": "company"}
+    ]
+  },
+  "/v2/flows/folders": {
+    "folders": [
+      {"id": 4001, "name": "Enterprise", "flowCount": 5},
+      {"id": 4002, "name": "SMB", "flowCount": 3}
+    ]
+  }
+}

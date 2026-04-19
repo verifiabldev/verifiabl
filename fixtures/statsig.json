@@ -1,0 +1,54 @@
+{
+  "/console/v1/gates": {
+    "message": "Gates listed successfully.",
+    "data": [
+      {"id": "gate_mock_001", "name": "Example Gate", "description": "Feature gate for agent testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "isEnabled": true, "status": "In Progress", "rules": [], "checksPerHour": 0, "type": "PERMANENT", "typeReason": "NONE", "team": null},
+      {"id": "gate_mock_002", "name": "Example Gate", "description": "Feature gate for agent testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "isEnabled": true, "status": "In Progress", "rules": [], "checksPerHour": 0, "type": "PERMANENT", "typeReason": "NONE", "team": null}
+    ],
+    "pagination": {"itemsPerPage": 10, "pageNumber": 1, "nextPage": null, "previousPage": null, "totalItems": 2, "all": "/console/v1/gates"}
+  },
+  "/console/v1/gates/gate_mock_001": {
+    "message": "Gate read successfully.",
+    "data": {"id": "gate_mock_001", "name": "Example Gate", "description": "Feature gate for agent testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "isEnabled": true, "status": "In Progress", "rules": [], "checksPerHour": 0, "type": "PERMANENT", "typeReason": "NONE", "team": null}
+  },
+  "/console/v1/experiments": {
+    "message": "Experiments listed successfully.",
+    "data": [
+      {"id": "exp_mock_001", "name": "Example Experiment", "description": "A/B test for agent workflow", "status": "active", "idType": "userID", "createdTime": 1710300000000, "creatorName": "Verifiabl", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "variants": [{"id": "control", "name": "Control", "description": ""}, {"id": "treatment", "name": "Treatment", "description": ""}]},
+      {"id": "exp_mock_002", "name": "Example Experiment", "description": "A/B test for agent workflow", "status": "active", "idType": "userID", "createdTime": 1710300000000, "creatorName": "Verifiabl", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "variants": [{"id": "control", "name": "Control", "description": ""}, {"id": "treatment", "name": "Treatment", "description": ""}]}
+    ],
+    "pagination": {"itemsPerPage": 10, "pageNumber": 1, "nextPage": null, "previousPage": null, "totalItems": 2, "all": "/console/v1/experiments"}
+  },
+  "/console/v1/experiments/exp_mock_001": {
+    "message": "Experiment read successfully.",
+    "data": {"id": "exp_mock_001", "name": "Example Experiment", "description": "A/B test for agent workflow", "status": "active", "idType": "userID", "createdTime": 1710300000000, "creatorName": "Verifiabl", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "variants": [{"id": "control", "name": "Control", "description": ""}, {"id": "treatment", "name": "Treatment", "description": ""}]}
+  },
+  "/console/v1/dynamic_configs": {
+    "message": "Dynamic Configs listed successfully.",
+    "data": [
+      {"id": "config_mock_001", "name": "Example Config", "description": "Dynamic config for testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "team": null, "isEnabled": true, "rules": [], "defaultValue": {}, "defaultValueJson5": "{}", "version": 1},
+      {"id": "config_mock_002", "name": "Example Config", "description": "Dynamic config for testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "team": null, "isEnabled": true, "rules": [], "defaultValue": {}, "defaultValueJson5": "{}", "version": 1}
+    ],
+    "pagination": {"itemsPerPage": 10, "pageNumber": 1, "nextPage": null, "previousPage": null, "totalItems": 2, "all": "/console/v1/dynamic_configs"}
+  },
+  "/console/v1/dynamic_configs/config_mock_001": {
+    "message": "Dynamic config read successfully.",
+    "data": {"id": "config_mock_001", "name": "Example Config", "description": "Dynamic config for testing", "idType": "userID", "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "targetApps": [], "holdoutIDs": [], "tags": [], "team": null, "isEnabled": true, "rules": [], "defaultValue": {}, "defaultValueJson5": "{}", "version": 1}
+  },
+  "/console/v1/layers": {
+    "message": "Layers listed successfully.",
+    "data": [
+      {"id": "layer_mock_001", "description": "", "idType": "userID", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "targetApps": [], "holdoutIDs": [], "tags": [], "team": null, "isImplicitLayer": false, "parameters": [{"name": "param1", "type": "string", "defaultValue": "default"}]},
+      {"id": "layer_mock_002", "description": "Test layer", "idType": "userID", "createdTime": 1710300000000, "creatorName": "Verifiabl", "creatorEmail": null, "lastModifierID": "mock_uid", "lastModifiedTime": 1710400000000, "lastModifierName": "Verifiabl", "lastModifierEmail": null, "creatorID": "mock_uid", "targetApps": [], "holdoutIDs": [], "tags": [], "team": null, "isImplicitLayer": false, "parameters": []}
+    ],
+    "pagination": {"itemsPerPage": 10, "pageNumber": 1, "nextPage": null, "previousPage": null, "totalItems": 2, "all": "/console/v1/layers"}
+  },
+  "/console/v1/metrics/list": {
+    "message": "Metrics listed successfully.",
+    "data": [
+      {"id": "metric_mock_001", "name": "purchase_count", "type": "count", "createdTime": 1710300000000},
+      {"id": "metric_mock_002", "name": "revenue", "type": "revenue", "createdTime": 1710300000000}
+    ],
+    "pagination": {"itemsPerPage": 10, "pageNumber": 1, "nextPage": null, "previousPage": null, "totalItems": 2, "all": "/console/v1/metrics/list"}
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "owners": [
+    {"id": "owner_mock_verifiabl", "name": "Mock User", "email": "mock@verifiabl.dev", "type": "user"},
+    {"id": "owner_mock_team", "name": "Mock Team", "type": "team"}
+  ],
+  "services": [
+    {
+      "id": "srv_mock_001",
+      "name": "my-web-service",
+      "type": "web_service",
+      "ownerId": "owner_mock_verifiabl",
+      "repo": "https://github.com/render-examples/flask-hello-world",
+      "branch": "main",
+      "createdAt": "2024-03-14T12:00:00.000Z",
+      "slug": "my-web-service",
+      "dashboardUrl": "https://dashboard.render.com/web/srv_mock_001",
+      "environmentId": "env_mock_001"
+    },
+    {
+      "id": "srv_mock_002",
+      "name": "api",
+      "type": "web_service",
+      "ownerId": "owner_mock_verifiabl",
+      "repo": "https://github.com/render-examples/node-hello-world",
+      "branch": "main",
+      "createdAt": "2024-03-14T12:00:00.000Z",
+      "slug": "api",
+      "dashboardUrl": "https://dashboard.render.com/web/srv_mock_002",
+      "environmentId": "env_mock_001"
+    }
+  ],
+  "deploys": [
+    {
+      "id": "dpl_mock_001",
+      "status": "live",
+      "trigger": "manual",
+      "commit": {"id": "abc123", "message": "Deploy via API", "createdAt": "2024-03-14T12:00:00.000Z"},
+      "createdAt": "2024-03-14T12:00:00.000Z",
+      "updatedAt": "2024-03-14T12:00:00.000Z",
+      "startedAt": "2024-03-14T12:00:00.000Z",
+      "finishedAt": "2024-03-14T12:01:00.000Z"
+    },
+    {
+      "id": "dpl_mock_002",
+      "status": "building",
+      "trigger": "new_commit",
+      "commit": {"id": "def456", "message": "Fix config", "createdAt": "2024-03-14T11:00:00.000Z"},
+      "createdAt": "2024-03-14T11:00:00.000Z",
+      "updatedAt": "2024-03-14T11:00:00.000Z",
+      "startedAt": "2024-03-14T11:00:00.000Z",
+      "finishedAt": null
+    }
+  ],
+  "projects": [
+    {"id": "prj_mock_001", "name": "my-app", "owner": {"id": "owner_mock_verifiabl", "name": "Mock User", "email": "mock@verifiabl.dev", "type": "user"}, "environmentIds": ["env_mock_001"], "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"},
+    {"id": "prj_mock_002", "name": "docs-site", "owner": {"id": "owner_mock_verifiabl", "name": "Mock User", "email": "mock@verifiabl.dev", "type": "user"}, "environmentIds": ["env_mock_001"], "createdAt": "2024-03-14T12:00:00.000Z", "updatedAt": "2024-03-14T12:00:00.000Z"}
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "/crm/v3/objects/contacts": {"results": [{"id": "1", "properties": {"email": "test@verifiabl.dev", "firstname": "Mock", "lastname": "User"}}], "paging": {"next": null}},
+  "/crm/v3/objects/deals": {"results": [{"id": "1", "properties": {"dealname": "Mock Deal", "amount": "10000", "dealstage": "closedwon"}}], "paging": {"next": null}}
+}

@@ -1,0 +1,60 @@
+{
+  "/v1/schema": {
+    "classes": [
+      {
+        "class": "Article",
+        "description": "Article collection",
+        "vectorizer": "text2vec-transformers",
+        "properties": [
+          {"name": "title", "dataType": ["string"]},
+          {"name": "content", "dataType": ["text"]}
+        ]
+      },
+      {
+        "class": "JeopardyQuestion",
+        "description": "Jeopardy questions",
+        "properties": [
+          {"name": "question", "dataType": ["string"]},
+          {"name": "answer", "dataType": ["string"]}
+        ]
+      }
+    ],
+    "name": "schema_mock",
+    "maintainer": "mock@verifiabl.dev"
+  },
+  "/v1/schema/Article": {
+    "class": "Article",
+    "description": "Article collection",
+    "vectorizer": "text2vec-transformers",
+    "properties": [
+      {"name": "title", "dataType": ["string"]},
+      {"name": "content", "dataType": ["text"]}
+    ]
+  },
+  "/v1/objects": {
+    "objects": [
+      {
+        "class": "Article",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "properties": {"title": "Mock Article", "content": "Sample content"},
+        "creationTimeUnix": 1710400000000,
+        "lastUpdateTimeUnix": 1710400000000
+      },
+      {
+        "class": "Article",
+        "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+        "properties": {"title": "Second Article", "content": "More content"},
+        "creationTimeUnix": 1710400001000,
+        "lastUpdateTimeUnix": 1710400001000
+      }
+    ],
+    "totalResults": 2
+  },
+  "/v1/objects/a1b2c3d4-e5f6-7890-abcd-ef1234567890": {
+    "class": "Article",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "properties": {"title": "Mock Article", "content": "Sample content"},
+    "creationTimeUnix": 1710400000000,
+    "lastUpdateTimeUnix": 1710400000000
+  }
+}

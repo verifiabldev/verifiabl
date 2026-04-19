@@ -1,0 +1,8 @@
+{
+  "/v1/balance": {"object": "balance", "available": [{"amount": 1000000, "currency": "usd"}], "pending": [{"amount": 50000, "currency": "usd"}]},
+  "/v1/customers": {"object": "list", "data": [{"id": "cus_mock_001", "object": "customer", "email": "alice@verifiabl.dev", "created": 1710400000}, {"id": "cus_mock_002", "object": "customer", "email": "bob@verifiabl.dev", "created": 1710400001}], "has_more": false},
+  "/v1/customers/cus_mock_verifiabl": {"id": "cus_mock_verifiabl", "object": "customer", "email": "test@verifiabl.dev", "created": 1710400000},
+  "/v1/payment_intents": {"object": "list", "data": [{"id": "pi_mock_001", "object": "payment_intent", "amount": 2000, "currency": "usd", "status": "succeeded"}, {"id": "pi_mock_002", "object": "payment_intent", "amount": 5000, "currency": "usd", "status": "requires_payment_method"}], "has_more": false},
+  "/v1/products": {"object": "list", "data": [{"id": "prod_mock_001", "object": "product", "name": "Pro plan", "created": 1710400000}, {"id": "prod_mock_002", "object": "product", "name": "Enterprise", "created": 1710400001}], "has_more": false},
+  "/v1/prices": {"object": "list", "data": [{"id": "price_mock_001", "object": "price", "unit_amount": 2000, "currency": "usd"}, {"id": "price_mock_002", "object": "price", "unit_amount": 5000, "currency": "usd"}], "has_more": false}
+}
